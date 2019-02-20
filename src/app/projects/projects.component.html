@@ -1,3 +1,11 @@
-<h2>Mes projets</h2>
+<app-project-details *ngIf="details" (canceled)="hideDetails()" [project]="detailed"></app-project-details>
 
-<app-project-view *ngFor="let project of projects" [project]="project"></app-project-view>
+<div *ngIf="!details">
+    <h2>Mes projets</h2>
+
+    <p>Voici différents projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.</p>
+
+    <div class="d-flex flex-wrap justify-content-between">
+        <app-project-view *ngFor="let project of projects" (click)="showDetails(project)" [project]="project"></app-project-view>
+    </div>
+</div>

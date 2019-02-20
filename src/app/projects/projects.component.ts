@@ -11,7 +11,12 @@ import { Project } from "../project";
 export class ProjectsComponent implements OnInit {
   private projects: Project[];
 
-  constructor(private projectData: ProjectsDataService) { }
+  detailed: Project;
+  details: boolean;
+
+  constructor(private projectData: ProjectsDataService) {
+    this.details = false;
+  }
 
   ngOnInit() {
     this.projectData.projects
@@ -20,4 +25,12 @@ export class ProjectsComponent implements OnInit {
       });
   }
 
+  hideDetails() {
+    this.details = false;
+  }
+
+  showDetails(project: Project) {
+    this.detailed = project;
+    this.details = true;
+  }
 }

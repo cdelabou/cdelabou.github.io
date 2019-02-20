@@ -1,0 +1,16 @@
+<button class="btn" (click)="cancel()"><i class="material-icons">arrow_back</i></button>
+
+<h3>{{project.name}}</h3>
+<p>Réalisé en {{project.year}}</p>
+<p *ngIf="!project.commented">Le projet n'est pas documenté pour le moment.</p>
+<p *ngIf="project.demo">Une démo est disponible <a [attr.href]="'./demos/' + project.demo">ici</a>. Plus de détails ci-dessous.</p>
+
+<p>{{project.description}}</p>
+
+<span *ngFor="let tech of project.technologies" class="tech">
+  {{tech}}
+</span>
+<br/>
+<span *ngFor="let language of project.languages">
+  {{language}}
+</span>

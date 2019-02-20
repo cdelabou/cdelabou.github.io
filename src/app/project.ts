@@ -1,7 +1,12 @@
 export interface Project {
     name: string;
-    repo?: string;
-    commented: boolean;
+    image?: string;
+    description: string;
+    repo: string;
+    role?: string;
+    commented?: boolean;
     year: number;
-    languages: string[];
+    academic?: boolean;
+    languages?: string[];
+    technologies?: string[];
 }

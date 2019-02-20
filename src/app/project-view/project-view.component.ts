@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 import { Project } from "../project";
+import { projection } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-project-view',
@@ -11,4 +12,8 @@ export class ProjectViewComponent {
   @Input() project: Project;
 
   constructor() { }
+
+  image(): string {
+    return `assets/images/${this.project.image || "default"}.jpg`;
+  }
 }
