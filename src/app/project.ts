@@ -9,4 +9,5 @@ export interface Project {
     academic?: boolean;
     languages?: string[];
     technologies?: string[];
+    demo?: string;
 }
