@@ -32,7 +32,8 @@
 		"year": 2013,
 		"repo": "https://github.com/banilaste/awekato",
 		"languages": ["javascript", "html", "css", "php"],
-		"technologies": ["jquery"]
+		"technologies": ["jquery"],
+		"image": "awekato"
 	},
 	{
 		"name": "Quarotte",
@@ -54,13 +55,14 @@
 		"technologies": ["parsing"]
 	},
 	{
-		"name": "8 Américain",
+		"name": "8 américain",
 		"repo": "https://bitbucket.org/banilaste/8americainlo02/src/master/",
 		"description": "8 américain en java avec de nombreuses variantes. Ces dernières sont implémentées et peuvent être ajoutée en modifiant des fichiers de définition de variable",
 		"role": "Modélisation, développement",
 		"academic": true,
 		"year": 2018,
 		"commented": true,
-		"languages": ["java"]
+		"languages": ["java"],
+		"image": "8americain"
 	}
 ]
