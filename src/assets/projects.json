@@ -5,7 +5,8 @@
 		"repo": "https://github.com/banilaste/banilaste.github.io",
 		"year": 2019,
 		"languages": ["typescript", "javascript", "html"],
-		"technologies": ["angular", "bootstrap"]
+		"technologies": ["angular", "bootstrap"],
+		"image": "portfolio"
 	},
 	{
 		"name": "Perceval controller",
@@ -23,6 +24,7 @@
 		"academic": true,
 		"commented": true,
 		"languages": ["java"],
+		"image": "perlin",
 		"year": 2016,
 		"repo": "https://github.com/banilaste/perlins-drive-simulator"
 	},
@@ -41,10 +43,11 @@
 		"description": "Projet de groupe réalisé dans le cadre d'une UE de gestion de projet. Outil en ligne de commande de traitement de données issues de mails.",
 		"year": 2018,
 		"commented": true,
-		"role": "Parsing des mails",
+		"role": "Création d'un module pour parser des mails et récupérer les données nécessaires à l'outil.",
 		"languages": ["typescript", "javascript"],
 		"technologies": ["unit testing", "parsing"],
-		"academic": true
+		"academic": true,
+		"image": "quarotte"
 	},
 	{
 		"name": "NFCompile",
@@ -57,12 +60,22 @@
 	{
 		"name": "8 américain",
 		"repo": "https://bitbucket.org/banilaste/8americainlo02/src/master/",
-		"description": "8 américain en java avec de nombreuses variantes. Ces dernières sont implémentées et peuvent être ajoutée en modifiant des fichiers de définition de variable",
-		"role": "Modélisation, développement",
+		"description": "8 américain en java avec de nombreuses variantes. Ces dernières sont implémentées et peuvent être ajoutée en modifiant des fichiers de définition de variable.",
 		"academic": true,
 		"year": 2018,
 		"commented": true,
 		"languages": ["java"],
 		"image": "8americain"
+	},
+	{
+		"repo": "https://github.com/RobotikUTT/Info-2019_BeagleBone_Black",
+		"name": "Info BeagleBone Black",
+		"description": "Partie haut niveau du gros robot de l'association de robotique de l'utt. Développée à l'aide de ROS ([Robot Operating System](http://www.ros.org/)), elle gère les différentes informations (capteurs, action réalisées et à réaliser) afin de diriger le robot.\n\nCe robot est construit dans l'objectif de participer à la [coupe de france de robotique 2019](https://www.coupederobotique.fr/).",
+		"role": "Reprise du code de l'ancien robot et améliorations :\n- Restructuration du code (modularisation, suppression de code redondants...)\n- Mise en place d'un arbre d'action pour la décision\n- Adaptation aux nouveaux actionneurs et capteurs",
+		"year": 2019,
+		"commented": true,
+		"languages": ["python", "c++"],
+		"technologies": ["ros", "unit testing"],
+		"image": "robotik"
 	}
 ]

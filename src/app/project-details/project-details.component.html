@@ -12,6 +12,11 @@
 <h4>Description</h4>
 <markdown [data]="project.description"></markdown>
 
+<div *ngIf="project.role">
+  <h4>Mon role dans le projet</h4>
+  <markdown [data]="project.role"></markdown>
+</div>
+
 <span *ngFor="let tech of project.technologies" class="tech">
   {{tech}}
 </span>
