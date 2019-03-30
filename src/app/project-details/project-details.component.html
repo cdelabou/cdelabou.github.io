@@ -13,16 +13,16 @@
 <markdown [data]="project.description"></markdown>
 
 <div *ngIf="project.role">
-  <h4>Mon role dans le projet</h4>
-  <markdown [data]="project.role"></markdown>
+	<h4>Mon role dans le projet</h4>
+	<markdown [data]="project.role"></markdown>
 </div>
 
 <span *ngFor="let tech of project.technologies" class="tech">
-  {{tech}}
+	{{tech}}
 </span>
 <br/>
 <span *ngFor="let language of project.languages">
-  {{language}}
+	{{language}}
 </span>
 
 <hr>

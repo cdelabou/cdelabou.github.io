@@ -1,0 +1,6 @@
+<article>
+	<span>{{name}}</span>
+	<div *ngIf="hasChildren">
+		<app-skill-view *ngFor="let name of keys()" [name]="name" [content]="content[name]"></app-skill-view>
+	</div>
+</article>

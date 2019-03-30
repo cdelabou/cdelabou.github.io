@@ -1,13 +1,11 @@
-<h2>Mes projets</h2>
-
 <app-project-details *ngIf="details" (canceled)="hideDetails()" [project]="detailed"></app-project-details>
 
 <div *ngIf="!details">
+	<p>Voici quelques projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.</p>
 
-    <p>Quelques projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.</p>
-
-    <div class="d-flex flex-wrap justify-content-between">
-        <app-project-view *ngFor="let project of projects" (click)="showDetails(project)" [project]="project"></app-project-view>
-    </div>
-    <!-- TODO: ajouter le projet de SI -->
+	<div class="d-flex flex-wrap justify-content-between">
+			<app-project-view *ngFor="let project of projects" (click)="showDetails(project)" [project]="project"></app-project-view>
+	</div>
+	<!-- TODO: ajouter le projet de SI -->
+	
 </div>
