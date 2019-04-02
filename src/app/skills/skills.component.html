@@ -9,5 +9,7 @@ Compétences acquises :
 <input type="checkbox" id="asso" checked [(ngModel)]="asso" />
 <label for="asso">Lors de projets associatifs</label>
 
+<br />
+
 <!-- Skills -->
-<app-skill-view *ngFor="let name of keys()" [name]="name" [content]="skills[name]"></app-skill-view>
+<app-skill-view *ngFor="let name of keys()" [name]="name" [content]="skills[name]" [depth]="0"></app-skill-view>

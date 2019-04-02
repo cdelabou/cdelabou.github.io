@@ -6,14 +6,14 @@
 
 <p>Réalisé en {{project.year}}</p>
 
-<p *ngIf="!project.commented">Le projet n'est pas documenté pour le moment.</p>
-<p *ngIf="project.demo">Une démo est disponible <a [attr.href]="'./demos/' + project.demo">ici</a>.</p>
+<!--<p *ngIf="!project.commented">Le projet n'est pas documenté pour le moment.</p>-->
+<p *ngIf="project.demo">Une démo est disponible <a [attr.href]="'./assets/demos/' + project.demo">ici</a>.</p>
 
 <h4>Description</h4>
 <markdown [data]="project.description"></markdown>
 
 <div *ngIf="project.role">
-	<h4>Mon role dans le projet</h4>
+	<h4>Mon rôle dans le projet</h4>
 	<markdown [data]="project.role"></markdown>
 </div>
 

@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Portfolio",
-		"description": "Site vitrine présentant mes différents projets.",
+		"description": "Site vitrine présentant mes différents projets et mes compétences.",
 		"repo": "https://github.com/banilaste/banilaste.github.io",
 		"year": 2019,
 		"languages": ["typescript", "javascript", "html"],
@@ -10,7 +10,7 @@
 	},
 	{
 		"name": "Perceval controller",
-		"description": "Application réalisée dans le cadre d'une UE de conception de robot. Elle permet de controler le robot à distance via bluetooth.\n\nDeux modes de fonctionnement sont disponibles :\n- Mode manuel : permet de donner manuellement les ordres au robot, ces derniers sont enregistrés au fur et à mesure pour le second mode\n- Mode playback : reprends un enregistrement d'ordre pour le reproduire à l'identique.\n\nLe bluetooth a été utilisé pour palier au manque de matériel et donc de moyens d'enregistrement des données sur le robot. L'enregistrement est une solution choisie pour pallier à l'irrégularité du sol et l'impossibilité de faire un asservissement.",
+		"description": "Application réalisée dans le cadre d'une UE de conception de robot. Elle permet de controler le robot à distance via bluetooth.\n\nDeux modes de fonctionnement sont disponibles :\n- Mode manuel : permet de donner manuellement les ordres au robot, ces derniers sont enregistrés au fur et à mesure pour le second mode\n- Mode playback : reprends un enregistrement d'ordre pour le reproduire à l'identique.\n\nLe bluetooth a été utilisé pour palier au manque de matériel et donc de moyens d'enregistrement des données sur le robot. L'enregistrement est une solution choisie pour pallier à l'irrégularité du sol et l'impossibilité de faire un asservissement avec le matériel donné.",
 		"repo": "https://github.com/banilaste/perceval-controller",
 		"year": 2017,
 		"image": "perceval",
@@ -40,7 +40,7 @@
 	{
 		"name": "Quarotte",
 		"repo": "https://sourceforge.net/projects/quarotte-gl02/",
-		"description": "Projet de groupe réalisé dans le cadre d'une UE de gestion de projet. Outil en ligne de commande de traitement de données issues de mails.",
+		"description": "Projet de groupe réalisé dans le cadre d'une <abbr title=\"unité d'enseignement, matière suivie durant un semestre\">UE</abbr> de gestion de projet. Outil en ligne de commande de traitement de données issues de mails.",
 		"year": 2018,
 		"commented": true,
 		"role": "Création d'un module pour parser des mails et récupérer les données nécessaires à l'outil.",
@@ -60,7 +60,7 @@
 	{
 		"name": "8 américain",
 		"repo": "https://bitbucket.org/banilaste/8americainlo02/src/master/",
-		"description": "8 américain en java avec de nombreuses variantes. Ces dernières sont implémentées et peuvent être ajoutée en modifiant des fichiers de définition de variable.",
+		"description": "8 américain en java avec de nombreuses variantes. Ces dernières sont implémentées et peuvent être ajoutées en modifiant des fichiers de définition de variantes.",
 		"academic": true,
 		"year": 2018,
 		"commented": true,
@@ -70,7 +70,7 @@
 	{
 		"repo": "https://github.com/RobotikUTT/Info-2019_BeagleBone_Black",
 		"name": "Info BeagleBone Black",
-		"description": "Partie haut niveau du gros robot de l'association de robotique de l'utt. Développée à l'aide de ROS ([Robot Operating System](http://www.ros.org/)), elle gère les différentes informations (capteurs, action réalisées et à réaliser) afin de diriger le robot.\n\nCe robot est construit dans l'objectif de participer à la [coupe de france de robotique 2019](https://www.coupederobotique.fr/).",
+		"description": "Partie haut niveau du gros robot de l'association de robotique de l'UTT. Développée à l'aide de ROS ([Robot Operating System](http://www.ros.org/)), elle gère les différentes informations (capteurs, action réalisées et à réaliser) afin de diriger le robot.\n\nCe robot est construit dans l'objectif de participer à la [coupe de france de robotique 2019](https://www.coupederobotique.fr/).",
 		"role": "Reprise du code de l'ancien robot et améliorations :\n- Restructuration du code (modularisation, suppression de code redondants...)\n- Mise en place d'un arbre d'action pour la décision\n- Adaptation aux nouveaux actionneurs et capteurs",
 		"year": 2019,
 		"commented": true,

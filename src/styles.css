@@ -2,5 +2,9 @@
 @import "~font-awesome/css/font-awesome.css";
 
 p {
-		text-align: justify;
+	text-align: justify;
+}
+
+app-skills>app-skills-view>article {
+	background-color: red;
 }
