@@ -1,8 +1,9 @@
-<button class="btn btn-outline-secondary" (click)="cancel()"><i class="material-icons">arrow_back</i>Retour à la liste des projets</button>
+<button class="btn btn-outline-secondary" (click)="cancel()"><i class="material-icons">arrow_back</i>Retour à la liste
+  des projets</button>
 <hr>
 
 <h3>{{project.name}}</h3>
-<a [attr.href]="project.repo" class="btn repo btn-outline-primary">Accès au code source</a>
+<a [attr.href]="project.repo" class="btn repo btn-outline-primary">{{ 'VIEW_SOURCE_CODE' | translate }}</a>
 
 <p>Réalisé en {{project.year}}</p>
 
@@ -13,16 +14,16 @@
 <markdown [data]="project.description"></markdown>
 
 <div *ngIf="project.role">
-	<h4>Mon rôle dans le projet</h4>
-	<markdown [data]="project.role"></markdown>
+  <h4>Mon rôle dans le projet</h4>
+  <markdown [data]="project.role"></markdown>
 </div>
 
 <span *ngFor="let tech of project.technologies" class="tech">
-	{{tech}}
+  {{tech}}
 </span>
-<br/>
+<br />
 <span *ngFor="let language of project.languages">
-	{{language}}
+  {{language}}
 </span>
 
 <hr>

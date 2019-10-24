@@ -1,0 +1,19 @@
+h2 {
+  margin-top: 1em;
+}
+
+.btn-group-toggle {
+
+  * {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .fr {
+    background-image: url("/assets/images/flag-fr.svg");
+  }
+
+  .en {
+    background-image: url("/assets/images/flag-en.svg");
+  }
+}

@@ -6,10 +6,10 @@ import { Project } from '../services/project';
 @Component({
 	selector: 'app-projects',
 	templateUrl: './projects.component.html',
-	styleUrls: ['./projects.component.css']
+	styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-	private projects: Project[];
+	projects: Project[];
 
 	detailed: Project;
 	details: boolean;

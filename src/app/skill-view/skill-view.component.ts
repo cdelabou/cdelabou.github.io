@@ -12,13 +12,13 @@ const colors: string[] = [
 	"795CF0"
 ];
 
-let affect: {[key: string]: string} = {};
+let affect: { [key: string]: string } = {};
 let colorIndex = 0;
 
 @Component({
 	selector: 'app-skill-view',
 	templateUrl: './skill-view.component.html',
-	styleUrls: ['./skill-view.component.css']
+	styleUrls: ['./skill-view.component.scss']
 })
 export class SkillViewComponent implements OnInit {
 	@Input() name: string;

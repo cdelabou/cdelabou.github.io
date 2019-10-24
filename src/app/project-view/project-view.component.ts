@@ -5,7 +5,7 @@ import { Project } from '../services/project';
 @Component({
 	selector: 'app-project-view',
 	templateUrl: './project-view.component.html',
-	styleUrls: ['./project-view.component.css']
+	styleUrls: ['./project-view.component.scss']
 })
 export class ProjectViewComponent {
 	@Input() project: Project;
