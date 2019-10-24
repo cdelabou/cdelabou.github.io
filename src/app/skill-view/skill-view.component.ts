@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Skill } from '../skills-data.service';
+import { Skill } from '../services/skills-data.service';
 
 const colors: string[] = [
 	"F34142",

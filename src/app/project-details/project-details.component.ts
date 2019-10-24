@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { Project } from '../project';
+import { Project } from '../services/project';
 
 @Component({
 	selector: 'app-project-details',

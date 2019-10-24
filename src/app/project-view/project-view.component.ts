@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Project } from '../project';
+import { Project } from '../services/project';
 
 @Component({
 	selector: 'app-project-view',
