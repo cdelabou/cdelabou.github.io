@@ -8,5 +8,7 @@
   "CONTACT_RESUME_TEXT": "Mon CV est également disponible ici",
   "CONTACT_RESUME_ALONE": "CV",
   "PROJECTS_INTRO_TEXT": "Voici quelques projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.",
-  "VIEW_SOURCE_CODE": "Accès au code source"
+  "VIEW_SOURCE_CODE": "Accès au code source",
+  "SKILLS_TEXT_1": "Autodidacte depuis l'âge de 14 ans, j'ai pu développer des compétences sur de nombreux domaines (développement, sécurité, formats de données...), mais également les renforcer par ma formation d'ingénieur en informatique.",
+  "SKILLS_TEXT_2": "J'ai une très bonne maitrise du <b>Typescript</b> (Node / Web) et du <b>Java</b> plus particulièrement, mais suis capable de m'adapter à tout types de langage de programmation."
 }

@@ -9,7 +9,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectViewComponent } from './project-view/project-view.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { SkillsComponent } from './skills/skills.component';
-import { SkillViewComponent } from './skill-view/skill-view.component';
 import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -27,8 +26,7 @@ export function createTranslateLoader(http: HttpClient) {
 		ProjectsComponent,
 		ProjectViewComponent,
 		ProjectDetailsComponent,
-		SkillsComponent,
-		SkillViewComponent
+		SkillsComponent
 	],
 	imports: [
 		BrowserModule,
