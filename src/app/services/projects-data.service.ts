@@ -14,27 +14,15 @@ export class ProjectsDataService {
 	private allProjects: Project[];
 
 	// Filtered projects
-	private projectsSource = new BehaviorSubject<Project[]>([]);
-	projects: Observable<Project[]>;
+	projects = new BehaviorSubject<Project[]>([]);
 
 	// Filters
-	private filtersStorage: Filter[];
-	private filtersSource = new BehaviorSubject<Filter[]>([]);
-	filters: Observable<Filter[]>;
+	filters = new BehaviorSubject<Filter[]>([]);
 
 	loaded: boolean;
 
 	constructor(private http: HttpClient) {
 		this.loaded = false;
-
-		// Init observables
-		this.projects = this.projectsSource.asObservable();
-		this.filters = this.filtersSource.asObservable();
-
-		// Save filters provided
-		this.filters.subscribe((filterArray: Filter[]) => {
-			this.filtersStorage = filterArray;
-		});
 
 		// Load projects
 		this.http.get<Project[]>('assets/projects.json')
@@ -42,15 +30,15 @@ export class ProjectsDataService {
 				this.allProjects = data;
 
 				// Provide next data to observers
-				this.projectsSource.next(this.allProjects);
+				this.projects.next(this.allProjects);
 				this.loaded = true;
 			});
 	}
 
 	addFilter(filter: Filter): void {
 		// Add to filter list
-		this.filtersStorage.push(filter);
-		this.filtersSource.next(this.filtersStorage);
+		this.filters.value.push(filter);
+		this.filters.next(this.filters.value);
 
 		// Apply it
 		this.applyFilters();
@@ -58,8 +46,8 @@ export class ProjectsDataService {
 
 	removeFilter(filter: Filter): void {
 		// Remove the filter from the list
-		this.filtersSource.next(
-			this.filtersStorage.filter(f => f !== filter)
+		this.filters.next(
+			this.filters.value.filter(f => f !== filter)
 		);
 
 		// Apply filters again
@@ -69,10 +57,10 @@ export class ProjectsDataService {
 	applyFilters(): void {
 		let result = this.allProjects;
 
-		this.filtersStorage.forEach(filter => {
+		this.filters.value.forEach(filter => {
 			result = result.filter(filter);
 		});
 
-		this.projectsSource.next(result);
+		this.projects.next(result);
 	}
 }

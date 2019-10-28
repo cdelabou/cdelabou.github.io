@@ -10,5 +10,35 @@
   "PROJECTS_INTRO_TEXT": "Here are some projects I've worked on as side projects or as courses projects.",
   "VIEW_SOURCE_CODE": "View source code",
   "SKILLS_TEXT_1": "Self-taught since I was 14, I have been able to develop skill on many fields (software developement, security, data structures...) that are strengthened with my engineering degree in computer science.",
-  "SKILLS_TEXT_2": "I have a good level with <b>Typescript</b> (Node / Web) and <b>Java</b> more specifically, but am able to adapt to every programming language."
+  "SKILLS_TEXT_2": "I have a good level with <b>Typescript</b> (Node / Web) and <b>Java</b> more specifically, but am able to adapt to every programming language.",
+  "PROJECT_PERSONAL_ROLE_TITLE": "My role in project",
+  "PROJECT_MADE_IN_TEXT": "Made in",
+  "projects": {
+    "portfolio": {
+      "description": "That's the website you're currently on ! It was created with Angular and Bootstrap to give more information about me and the projects I make thoughout my journey in computer science."
+    },
+    "perceval": {
+      "description": "Simple app made in a course project of robot building. It was created in order to control the robot remotely with bluetooth.\n\nIT has two modes available :\n- Manual control mode : allow to give movement order to the robot with the computer's keyboard, these commands are recorded to be used in the second mode\n- Playback mode : take a previous command recording and reproduce the same sequence.\n\nBluetooth has been used to compensate the lack of electronical supplies, allowing to store data on the computer instead of hard-coding the sequence every time. Recording data was the adopted solution because of the irregularity of the ground and the unability to make proper position control with the given supplies."
+    },
+    "perlin": {
+      "description": "High school project for a software developement introduction course.\nIt is a basic car game made in Java."
+    },
+    "awekato": {
+      "description": "Web OS (\"operating system\" like service on the web) made as a personal project using almost the same structure as a Linux system."
+    },
+    "quarotte": {
+      "description": "Group project in a project management course. It is a command line tool to process data from many of mails to produce visual data.",
+      "role": "Developement of a module to parse mail to retrieve required data for the tool."
+    },
+    "nfcompile": {
+      "description": "Language interpreter project. It was a personal challenge to make a language used in a algorithm introduction course runnable.\n\nIt create a tree similar to a abstract syntax tree to parse the code."
+    },
+    "8americain": {
+      "description": "It is a Crazy Eights (called \"8 Américain\" in France) implementation in Java with many variations. These variations are added through \"definition\" files and can be modified without touching the source code."
+    },
+    "robotik": {
+      "description": "High-level software part of a robot designed with the robotic association of the UTT. Powered with ([Robot Operating System](http://www.ros.org/)), it handles many data (from sensors, action made et to be done) in order to give directions to the robot.\n\nIt was build for the [coupe de france de robotique 2019](https://www.coupederobotique.fr/) (a robotics cup between students in France).",
+      "role": "Take up of the previous code and improvements :\n- Code refactoring (more modular code, removing redundant code...)\n- Implementation of a decision tree defined in XML configuration files\n- Handling of new sensors and actuators"
+    }
+  }
 }

@@ -1,12 +1,15 @@
-<app-project-details *ngIf="details" (canceled)="hideDetails()" [project]="detailed"></app-project-details>
+<p>{{ 'PROJECTS_INTRO_TEXT' | translate }}</p>
+<div class="row">
+  <div [class.col-md-6]="details" [class.col-md-12]="!details">
 
-<div *ngIf="!details">
-  <p>{{ 'PROJECTS_INTRO_TEXT' | translate }}</p>
+    <div class="d-flex flex-wrap justify-content-between">
+      <app-project-view *ngFor="let project of projects" (click)="showDetails(project)" [project]="project">
+      </app-project-view>
+    </div>
+    <!-- TODO: ajouter le projet de SI -->
 
-  <div class="d-flex flex-wrap justify-content-between">
-    <app-project-view *ngFor="let project of projects" (click)="showDetails(project)" [project]="project">
-    </app-project-view>
   </div>
-  <!-- TODO: ajouter le projet de SI -->
-
+  <div class="col-md-6" *ngIf="details">
+    <app-project-details (canceled)="hideDetails()" [project]="detailed"></app-project-details>
+  </div>
 </div>

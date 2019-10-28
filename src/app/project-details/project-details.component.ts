@@ -6,7 +6,7 @@ import { Project } from '../services/project';
 	templateUrl: './project-details.component.html',
 	styleUrls: ['./project-details.component.scss']
 })
-export class ProjectDetailsComponent implements OnInit {
+export class ProjectDetailsComponent {
 	@Input() project: Project;
 	@Output() canceled: EventEmitter<void>;
 
@@ -14,12 +14,16 @@ export class ProjectDetailsComponent implements OnInit {
 		this.canceled = new EventEmitter<void>();
 	}
 
-	ngOnInit() {
-
-	}
-
 	cancel(): void {
 		this.canceled.emit();
+	}
+
+	description() {
+		return `projects.${this.project.id}.description`;
+	}
+
+	role() {
+		return `projects.${this.project.id}.role`;
 	}
 
 }
