@@ -25,8 +25,9 @@
 
 <h2>{{ 'CONTACT_TITLE' | translate }}</h2>
 
-<p>{{ 'CONTACT_EMAIL_TEXT' | translate }} : <a href="mailto:cle.bourdonnaye@gmail.com">cle.bourdonnaye@gmail.com</a>.
-</p>
-<p>{{ 'CONTACT_RESUME_TEXT' | translate }} : <a
-    href="/assets/cv-28-10-2019-en.pdf">{{ 'CONTACT_RESUME_ALONE' | translate }}</a>
-  ({{ 'LAST_UPDATED' | translate }} {{ resumeUpdateDate | localizedDate }}).</p>
+<div *ngFor="let link of links" class="row">
+  <a href="{{ link.link }}" class="col-lg-6 col-12" [ngClass]="link.class">
+    <fa-icon [icon]='link.icon' class="fa-3x fa-fw d-inline-block align-middle"></fa-icon>
+    <h3 class="text-dark align-middle d-inline">{{ link.text }}</h3>
+  </a>
+</div>

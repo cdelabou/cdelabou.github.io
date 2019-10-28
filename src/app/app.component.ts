@@ -1,5 +1,14 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { faEnvelope, IconDefinition, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { forkJoin } from 'rxjs';
+
+const dateFormatOptions = {
+	year: "numeric",
+	day: "numeric",
+	month: "short"
+};
 
 @Component({
 	selector: 'app-root',
@@ -7,11 +16,33 @@ import { TranslateService } from '@ngx-translate/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	resumeUpdateDate = new Date(2019, 10, 28);
+	resumeUpdateDate = new Date(2019, 9, 28);
+
+	resume = { icon: faFileAlt, link: '/assets/cv-28-10-2019-en.pdf', text: '', class: 'text-success' };
+
+	links: { icon: IconDefinition, link: string, text: string, class: string }[] = [
+		{ icon: faEnvelope, link: 'mailto:cle.bourdonnaye@gmail.com', text: 'cle.bourdonnaye@gmail.com', class: 'text-danger' },
+		{ icon: faLinkedin, link: 'https://www.linkedin.com/in/clement-bourdonnaye/', text: '@clement-bourdonnaye', class: 'text-primary' },
+		this.resume
+	];
 
 	constructor(private translate: TranslateService) {
 		translate.setDefaultLang('en-US');
-		translate.use('en-US');
+
+		if (navigator.language.toLowerCase().includes('fr')) {
+			translate.use('fr-FR');
+		} else {
+			translate.use('en-US');
+		}
+
+		translate.onLangChange.subscribe(obj => {
+			forkJoin([
+				translate.get('CONTACT_RESUME_ALONE'),
+				translate.get('LAST_UPDATED')
+			]).subscribe(([resume, update]) =>
+				this.resume.text = `${resume} (${update} ${this.resumeUpdateDate.toLocaleDateString(obj.lang, dateFormatOptions)})`
+			);
+		});
 	}
 
 	set lang(lang: string) {

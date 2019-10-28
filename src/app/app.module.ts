@@ -30,8 +30,7 @@ export function createTranslateLoader(http: HttpClient) {
 		ProjectViewComponent,
 		ProjectDetailsComponent,
 		SkillsComponent,
-		LocalizedDatePipe,
-		FontAwesomeModule
+		LocalizedDatePipe
 	],
 	imports: [
 		BrowserModule,
@@ -44,7 +43,8 @@ export function createTranslateLoader(http: HttpClient) {
 				useFactory: createTranslateLoader,
 				deps: [HttpClient]
 			}
-		})
+		}),
+		FontAwesomeModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

@@ -7,16 +7,19 @@ import { Project } from '../services/project';
 	styleUrls: ['./project-details.component.scss']
 })
 export class ProjectDetailsComponent {
-	@Input() project: Project;
-	@Output() canceled: EventEmitter<void>;
+	private _project: Project;
 
-	constructor() {
-		this.canceled = new EventEmitter<void>();
+	@Input()
+	set project(project: Project) {
+		// Scroll to element
+		document.getElementById('project-title').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+		this._project = project;
 	}
 
-	cancel(): void {
-		this.canceled.emit();
+	get project() {
+		return this._project;
 	}
+
 
 	description() {
 		return `projects.${this.project.id}.description`;

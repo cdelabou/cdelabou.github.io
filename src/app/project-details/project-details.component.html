@@ -1,6 +1,7 @@
-<h3>{{project.name}}</h3>
-<a [attr.href]="project.repo" class="btn repo btn-primary">{{ 'VIEW_SOURCE_CODE' | translate }}</a>
-
+<div class="mt-md-0 mt-3" id="project-title">
+  <h3>{{project.name}}</h3>
+  <a [attr.href]="project.repo" class="btn btn-primary float-right">{{ 'VIEW_SOURCE_CODE' | translate }}</a>
+</div>
 <p>{{ 'PROJECT_MADE_IN_TEXT' | translate }} {{project.year}}</p>
 
 <!--<p *ngIf="!project.commented">Le projet n'est pas documenté pour le moment.</p>-->
