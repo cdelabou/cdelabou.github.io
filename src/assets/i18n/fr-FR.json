@@ -13,6 +13,7 @@
   "SKILLS_TEXT_2": "J'ai une très bonne maitrise du <b>Typescript</b> (Node / Web) et du <b>Java</b> plus particulièrement, mais suis capable de m'adapter à tout types de langage de programmation.",
   "PROJECT_PERSONAL_ROLE_TITLE": "Mon rôle dans le projet",
   "PROJECT_MADE_IN_TEXT": "Réalisé en",
+  "LAST_UPDATED": "mis à jour le ",
   "projects": {
     "portfolio": {
       "description": "Site vitrine présentant mes différents projets et mes compétences."

@@ -9,12 +9,15 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectViewComponent } from './project-view/project-view.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { SkillsComponent } from './skills/skills.component';
-import localeFr from '@angular/common/locales/fr';
-import { registerLocaleData } from '@angular/common';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LocalizedDatePipe } from './localized-date.pipe';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import localeFr from '@angular/common/locales/fr';
+import { registerLocaleData } from '@angular/common';
 
-registerLocaleData(localeFr, 'fr');
+
+registerLocaleData(localeFr);
 
 export function createTranslateLoader(http: HttpClient) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,7 +29,9 @@ export function createTranslateLoader(http: HttpClient) {
 		ProjectsComponent,
 		ProjectViewComponent,
 		ProjectDetailsComponent,
-		SkillsComponent
+		SkillsComponent,
+		LocalizedDatePipe,
+		FontAwesomeModule
 	],
 	imports: [
 		BrowserModule,

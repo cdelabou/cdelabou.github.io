@@ -13,6 +13,6 @@ export class ProjectViewComponent {
 	constructor() { }
 
 	image(): string {
-		return `assets/images/${this.project.image || 'default'}.jpg`;
+		return `assets/images/project/${this.project.image || 'default'}.jpg`;
 	}
 }

@@ -4,10 +4,10 @@
   <div class="col-auto">
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn en">
-        <input type="radio" name="lang" autocomplete="off" value="en" [(ngModel)]="lang">
+        <input type="radio" name="lang" autocomplete="off" value="en-US" [(ngModel)]="lang">
       </label>
       <label class="btn fr">
-        <input type="radio" name="lang" autocomplete="off" value="fr" [(ngModel)]="lang">
+        <input type="radio" name="lang" autocomplete="off" value="fr-FR" [(ngModel)]="lang">
       </label>
     </div>
   </div>
@@ -28,4 +28,5 @@
 <p>{{ 'CONTACT_EMAIL_TEXT' | translate }} : <a href="mailto:cle.bourdonnaye@gmail.com">cle.bourdonnaye@gmail.com</a>.
 </p>
 <p>{{ 'CONTACT_RESUME_TEXT' | translate }} : <a
-    href="/assets/cv_clement_de_la_bourdonnaye.pdf">{{ 'CONTACT_RESUME_ALONE' | translate }}</a>.</p>
+    href="/assets/cv-28-10-2019-en.pdf">{{ 'CONTACT_RESUME_ALONE' | translate }}</a>
+  ({{ 'LAST_UPDATED' | translate }} {{ resumeUpdateDate | localizedDate }}).</p>

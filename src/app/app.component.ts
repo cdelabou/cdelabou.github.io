@@ -7,9 +7,11 @@ import { TranslateService } from '@ngx-translate/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+	resumeUpdateDate = new Date(2019, 10, 28);
+
 	constructor(private translate: TranslateService) {
-		translate.setDefaultLang('en');
-		translate.use('en');
+		translate.setDefaultLang('en-US');
+		translate.use('en-US');
 	}
 
 	set lang(lang: string) {
