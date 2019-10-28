@@ -6,13 +6,14 @@
   "CONTACT_TITLE": "Contact",
   "CONTACT_EMAIL_TEXT": "Vous pouvez me contacter par mail à l'adresse suivante",
   "CONTACT_RESUME_TEXT": "Mon CV est également disponible ici",
-  "CONTACT_RESUME_ALONE": "CV",
+  "CONTACT_RESUME_ALONE": "Mon CV",
   "PROJECTS_INTRO_TEXT": "Voici quelques projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.",
   "VIEW_SOURCE_CODE": "Accès au code source",
   "SKILLS_TEXT_1": "Autodidacte depuis l'âge de 14 ans, j'ai pu développer des compétences sur de nombreux domaines (développement, sécurité, formats de données...), mais également les renforcer par ma formation d'ingénieur en informatique.",
   "SKILLS_TEXT_2": "J'ai une très bonne maitrise du <b>Typescript</b> (Node / Web) et du <b>Java</b> plus particulièrement, mais suis capable de m'adapter à tout types de langage de programmation.",
   "PROJECT_PERSONAL_ROLE_TITLE": "Mon rôle dans le projet",
   "PROJECT_MADE_IN_TEXT": "Réalisé en",
+  "LAST_UPDATED": "mis à jour le",
   "projects": {
     "portfolio": {
       "description": "Site vitrine présentant mes différents projets et mes compétences."
