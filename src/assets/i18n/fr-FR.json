@@ -1,6 +1,6 @@
 {
   "WHO_AM_I_TITLE": "Qui suis je?",
-  "WHO_AM_I_TEXT": "Étudiant en 1ère année de cycle ingénieur à l'<b>Université de Technologie de Troyes</b> en Informatique et Système d'Information. Je suis passioné d'informatique et de programmation en général.",
+  "WHO_AM_I_TEXT": "Étudiant en 2ème année de cycle ingénieur à l'<b>Université de Technologie de Troyes</b> en Informatique et Système d'Information. Je suis passioné d'informatique et de programmation en général.",
   "SKILLS_TITLE": "Mes compétences",
   "PROJECTS_TITLE": "Mes projets",
   "CONTACT_TITLE": "Contact",
@@ -10,7 +10,7 @@
   "PROJECTS_INTRO_TEXT": "Voici quelques projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.",
   "VIEW_SOURCE_CODE": "Accès au code source",
   "SKILLS_TEXT_1": "Autodidacte depuis l'âge de 14 ans, j'ai pu développer des compétences sur de nombreux domaines (développement, sécurité, formats de données...), mais également les renforcer par ma formation d'ingénieur en informatique.",
-  "SKILLS_TEXT_2": "J'ai une très bonne maitrise du <b>Typescript</b> (Node / Web) et du <b>Java</b> plus particulièrement, mais suis capable de m'adapter à tout types de langage de programmation.",
+  "SKILLS_TEXT_2": "J'ai une très bonne maitrise du <b>Typescript</b> (Node / Web) et du <b>Java</b> plus particulièrement, et suis capable de m'adapter à tout types de langage de programmation.",
   "PROJECT_PERSONAL_ROLE_TITLE": "Mon rôle dans le projet",
   "PROJECT_MADE_IN_TEXT": "Réalisé en",
   "LAST_UPDATED": "mis à jour le",
