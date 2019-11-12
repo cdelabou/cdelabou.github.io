@@ -16,9 +16,9 @@ const dateFormatOptions = {
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	resumeUpdateDate = new Date(2019, 9, 28);
+	resumeUpdateDate = new Date(2019, 10, 12);
 
-	resume = { icon: faFileAlt, link: '/assets/cv-28-10-2019-en.pdf', text: '', class: 'text-success' };
+	resume = { icon: faFileAlt, link: '/assets/cv-12-11-2019-en.pdf', text: '', class: 'text-success' };
 
 	links: { icon: IconDefinition, link: string, text: string, class: string }[] = [
 		{ icon: faEnvelope, link: 'mailto:cle.bourdonnaye@gmail.com', text: 'cle.bourdonnaye@gmail.com', class: 'text-danger' },
