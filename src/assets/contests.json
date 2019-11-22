@@ -1,0 +1,66 @@
+[
+	{
+		"id": "it-axa",
+		"attempts": [
+			{
+				"year": 2019,
+				"place": 1,
+				"outof": 1100,
+				"link": "https://editx.eu/it-challenge/java-challenge-france-2019-gfi-informatique",
+				"resultLink": "https://www.linkedin.com/posts/albanjarry_challengeitaxa-axa-it-activity-6603199377534267392-YC-F"
+			}
+		]
+	},
+	{
+		"id": "java-gfi",
+		"attempts": [
+			{
+				"year": 2019,
+				"place": 2,
+				"outof": 720,
+				"link": "https://editx.eu/it-challenge/java-challenge-france-2019-gfi-informatique",
+			}
+		]
+	},
+	{
+		"id": "battledev",
+		"link": "https://battledev.blogdumoderateur.com/",
+		"attempts": [
+			{
+				"year": 2018,
+				"month": 10,
+				"place": 327,
+				"outof": 3914,
+				"resultLink": "https://www.blogdumoderateur.com/resultats-battledev-novembre-2018/"
+			},
+			{
+				"year": 2017,
+				"month": 10,
+				"place": 161,
+				"outof": 2780,
+				"resultLink": "https://www.blogdumoderateur.com/resultats-battledev-novembre-2017/"
+			},
+			{
+				"year": 2017,
+				"month": 10,
+				"place": 92,
+				"outof": 1987,
+				"resultLink": "https://www.blogdumoderateur.com/resultats-battledev-novembre-2016/"
+			}
+		]
+	},
+	{
+		"id": "codingbattle",
+		"link": "https://www.le-shaker.com/codingbattle",
+		"attempts": [
+			{
+				"year": 2018,
+				"place": 46
+			},
+			{
+				"year": 2019,
+				"place": 35
+			}
+		]
+	}
+]

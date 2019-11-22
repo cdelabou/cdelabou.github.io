@@ -15,6 +15,7 @@ import { LocalizedDatePipe } from './localized-date.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
+import { CompetitiveProgrammingComponent } from './competitive-programming/competitive-programming.component';
 
 
 registerLocaleData(localeFr);
@@ -30,7 +31,8 @@ export function createTranslateLoader(http: HttpClient) {
 		ProjectViewComponent,
 		ProjectDetailsComponent,
 		SkillsComponent,
-		LocalizedDatePipe
+		LocalizedDatePipe,
+		CompetitiveProgrammingComponent
 	],
 	imports: [
 		BrowserModule,
