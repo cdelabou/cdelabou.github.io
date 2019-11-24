@@ -27,15 +27,22 @@ export class AppComponent {
 	];
 
 	constructor(private translate: TranslateService) {
+		const savedLang = localStorage.getItem('lang');
 		translate.setDefaultLang('en-US');
 
-		if (navigator.language.toLowerCase().includes('fr')) {
+		// Choose language depending on either saved lang or 
+		if (['fr-FR', 'en-US'].includes(savedLang)) {
+			translate.use(savedLang);
+		} else if (navigator.language.toLowerCase().includes('fr')) {
 			translate.use('fr-FR');
 		} else {
 			translate.use('en-US');
 		}
 
 		translate.onLangChange.subscribe(obj => {
+			// Save lang
+			localStorage.setItem('lang', obj.lang);
+
 			forkJoin([
 				translate.get('CONTACT_RESUME_ALONE'),
 				translate.get('LAST_UPDATED')
