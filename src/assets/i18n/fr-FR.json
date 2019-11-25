@@ -14,7 +14,11 @@
   "PROJECT_PERSONAL_ROLE_TITLE": "Mon rôle dans le projet",
   "PROJECT_MADE_IN_TEXT": "Réalisé en",
   "LAST_UPDATED": "mis à jour le",
+  "CP_TITLE": "Concours et challenges informatique",
   "CP_TEXT": "Je participe régulièrement à des compétitions ou challenges de programmation, en voici quelques uns.",
+  "OUT_OF": "sur",
+  "RESULTS": "Résultats",
+  "CONTEST_DETAILS": "Détails sur le concours",
   "contests": {
     "it-axa": "Meilleur étudiant en informatique de France",
     "java-gfi": "Java Challenge France by Gfi Informatique",

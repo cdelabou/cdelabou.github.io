@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ContestsDataService } from '../services/contest-data.service';
 import { Contest, ContestAttempt } from '../services/contest.model';
+import { filter } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 type WeightedContestAttempt = ContestAttempt & { weight?: number };
 
@@ -13,8 +15,13 @@ type WeightedContestAttempt = ContestAttempt & { weight?: number };
 export class CompetitiveProgrammingComponent {
   contests: Contest[];
 
-  constructor(contestService: ContestsDataService) {
-    contestService.contests.subscribe(contests => this.contests = this.sortByPositions(contests));
+  constructor(
+    contestService: ContestsDataService,
+    private translateService: TranslateService
+  ) {
+    contestService.contests
+      .pipe(filter(ctsts => ctsts !== null))
+      .subscribe(contests => this.contests = this.sortByPositions(contests));
   }
 
   sortByPositions(contests: Contest[]) {
@@ -34,4 +41,29 @@ export class CompetitiveProgrammingComponent {
     return attempt;
   }
 
+  title(contest: Contest) {
+		return `contests.${contest.id}`;
+  }
+
+  private frenchOrdinal(input: number) {
+    return input === 1 ? 'er' : 'ème';
+  }
+
+  private englishOrdinal(input: number) {
+    if (input % 10 === 1 && input % 100 !== 11) {
+      return "st";
+    } else if (input % 10 === 2) {
+      return "nd";
+    } else if (input %10  === 3) {
+      return "rd";
+    } else {
+      return 'th';
+    }
+  }
+
+  ordinalSuffixOf(input: number) {
+    return this.translateService.currentLang === 'fr-FR'
+      ? this.frenchOrdinal(input)
+        : this.englishOrdinal(input);
+  }
 }

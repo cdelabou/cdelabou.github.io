@@ -1,4 +1,40 @@
 <p>{{ 'CP_TEXT' | translate }}</p>
 
-<div *ngFor="let contest of contests">
+<div class="card-columns">
+	<div *ngFor="let contest of contests" class="card">
+		<div class="card-header bg-dark text-light">
+			{{ title(contest) | translate }}
+			<a *ngIf="contest.link"
+				[href]="contest.link"
+				target="_blank"
+				class="material-icons float-right text-secondary"
+				title="{{ 'CONTEST_DETAILS' | translate }}"
+			>
+				open_in_new
+			</a>
+		</div>
+		<ul *ngFor="let attempt of contest.attempts" class="list-group list-group-flush">
+			<li class="list-group-item">
+				<b>{{ attempt.year }} : </b>{{ attempt.place }}{{ ordinalSuffixOf(attempt.place) }} <ng-container *ngIf="attempt.outof">{{ 'OUT_OF' | translate }} {{ attempt.outof }}</ng-container>
+				<ng-container >
+					<a *ngIf="attempt.resultLink"
+						[href]="attempt.resultLink"
+						target="_blank"
+						class="material-icons float-right text-primary"
+						title="{{ 'RESULTS' | translate }}"
+					>
+						open_in_new
+					</a>
+					<a *ngIf="attempt.link"
+						[href]="attempt.link"
+						target="_blank"
+						class="material-icons float-right text-secondary"
+						title="{{ 'CONTEST_DETAILS' | translate }}"
+					>
+						open_in_new
+					</a>
+				</ng-container>
+			</li>
+		</ul>
+</div>
 </div>

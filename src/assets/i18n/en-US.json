@@ -14,7 +14,11 @@
   "PROJECT_PERSONAL_ROLE_TITLE": "My role in the project",
   "PROJECT_MADE_IN_TEXT": "Made in",
   "LAST_UPDATED": "last updated on",
+  "CP_TITLE": "Competitive programming and IT challenges",
   "CP_TEXT": "I oftenly engage in competitive programming contests or IT challenges, here are some challenges I attended.",
+  "OUT_OF": "out of",
+  "RESULTS": "Results",
+  "CONTEST_DETAILS": "Contest details",
   "contests": {
     "it-axa": "Best french IT student by Axa",
     "java-gfi": "Java Challenge France by Gfi Informatique",
