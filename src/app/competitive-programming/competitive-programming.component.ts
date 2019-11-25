@@ -26,7 +26,7 @@ export class CompetitiveProgrammingComponent {
 
   sortByPositions(contests: Contest[]) {
     contests.forEach(contest => {
-      contest.attempts = contest.attempts.map(this.computeWeight);
+      contest.attempts = contest.attempts.map(this.computeWeight).sort((a, b) => a.weight - b.weight);
     });
 
     return contests.sort((a, b) => (a.attempts[0] as WeightedContestAttempt).weight - (b.attempts[0] as WeightedContestAttempt).weight);
