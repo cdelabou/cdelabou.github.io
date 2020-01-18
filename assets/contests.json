@@ -18,6 +18,16 @@
     }]
   },
   {
+    "id": "dotnet-softfluent",
+    "attempts": [{
+      "year": 2019,
+      "place": 1,
+      "outof": 72,
+      "link": "https://editx.eu/it-challenge/net-challenge-france-2019-softfluent",
+      "resultLink": "https://www.softfluent.fr/blog/net-challenge-2019-la-finale/"
+    }]
+  },
+  {
     "id": "battledev",
     "link": "https://battledev.blogdumoderateur.com/",
     "attempts": [{
