@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-skills',
@@ -6,5 +7,54 @@ import { Component } from '@angular/core';
 	styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
+	public faInfo = faInfoCircle;
 
+	categories = {
+		Technos: [
+			{ name: 'Java', percent: 90 },
+			{ name: "Typescript / Javascript", percent: 100 },
+			{ name: 'Kotlin', percent: 80 },
+			{ name: 'Python', percent: 60 },
+			{ name: "C++", percent: 50 },
+			{ name: "PHP", percent: 50 },
+			{ name: 'Angular', percent: 100 },
+			{ name: 'ROS', percent: 70 },
+			{ name: 'Angular JS', percent: 55 },
+			{ name: 'Spring Boot', percent: 60 }
+		],
+		Environment: [
+			{ name: 'Git', percent: 90 },
+			{ name: 'VSCode', percent: 80 },
+			{ name: 'Idea InteliJ', percent: 75 },
+			{ name: 'Sublime Text', percent: 60 },
+			{ name: 'Linux', percent: 90 },
+			{ name: 'Windows', percent: 85 },
+			{ name: 'Maven', percent: 60 },
+			{ name: 'Eclipse', percent: 60 }
+		],
+		Interests: [
+			{ name: 'Code analysis / Compilation', percent: 95, description: "I am genuinely interested in every code related tools, such as compilators, code generators, code analysis..." },
+			{ name: 'Artificial intelligence', percent: 70 },
+			{ name: 'Web development', percent: 65 },
+			{ name: 'Libraries / Frameworks', percent: 90, description: 'Building a generic behavior, so it can be used in a really simple way on many projects later, is really interesting for me !' },
+			{ name: 'Robotics', percent: 70 },
+			{ name: 'Data analysis', percent: 60 }
+		]
+	}
+
+	constructor() {
+		for (let name in this.categories) {
+			this.categories[name].sort((a, b) => b.percent - a.percent)
+		}
+	}
+
+	classOf(percent: number) {
+		if (percent >= 90) {
+			return 'bg-warning';
+		} else if (percent >= 70) {
+			return 'bg-success';
+		} else {
+			return 'bg-primary'
+		}
+	}
 }

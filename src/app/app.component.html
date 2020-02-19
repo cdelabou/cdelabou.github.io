@@ -24,39 +24,7 @@
 
 <section class="bg-light">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h2 class="pb-2">Formation</h2>
-  
-        <div class="row mb-3"  *ngFor="let school of schools">
-          <img class="col-4 pr-0" src="{{ school.icon }}" />
-          <div class="col-8">
-            <h5 class="my-0 pt-0">{{ school.name }}</h5>
-            <small>
-              {{ school.start }} - {{ school.stop }}
-              <app-location [name]="school.location"></app-location>
-            </small>
-            <p class="pt-3">{{ school.description }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 bg-light">
-        <h2 class="pb-2">Expériences</h2>
-  
-        <div class="row mb-3"  *ngFor="let job of jobs">
-          <img class="col-4 pr-0" src="{{ job.icon }}" />
-          <div class="col-8">
-            <h5 class="my-0 pt-0">{{ job.company }}</h5>
-            <h6 class="my-0">{{ job.role }}</h6>
-            <small>
-              {{ job.start }} - {{ job.stop }}
-              <app-location [name]="job.location"></app-location>
-            </small>
-            <p class="pt-3">{{ job.description }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-experiences></app-experiences>
   </div>
 </section>
 

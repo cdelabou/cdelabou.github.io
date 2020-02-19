@@ -1,8 +1,26 @@
 <p>{{ 'SKILLS_TEXT_1' | translate }}</p>
-<p [innerHTML]="'SKILLS_TEXT_2' | translate"></p>
 
-<div class="row justify-content-center">
-  <div class="col-lg-6">
-    <img src="assets/images/wordcloud.svg" class="img-fluid" />
-  </div>
+<div class="row">
+  <article *ngFor="let category of categories | keyvalue" class="col-md-4 mt-4 mt-md-0">
+    <h3>{{ category.key }}</h3>
+    <div *ngFor="let language of category.value" class="mb-1">
+      {{ language.name }}
+      <fa-icon
+        [icon]="faInfo"
+        *ngIf="language.description"
+        placement="bottom"
+        [ngbTooltip]="language.description"
+      ></fa-icon>
+      <div class="progress">
+        <div 
+          class="progress-bar"
+          role="progressbar" 
+          [ngClass]="classOf(language.percent)"
+          [ngStyle]="{ width: language.percent + '%' }"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          ></div>
+      </div>
+    </div>
+  </article>
 </div>

@@ -17,7 +17,8 @@ import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { CompetitiveProgrammingComponent } from './competitive-programming/competitive-programming.component';
 import { LocationComponent } from './location/location.component';
-
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData(localeFr);
 
@@ -34,9 +35,11 @@ export function createTranslateLoader(http: HttpClient) {
 		SkillsComponent,
 		LocalizedDatePipe,
 		CompetitiveProgrammingComponent,
-		LocationComponent
+		LocationComponent,
+		ExperiencesComponent
 	],
 	imports: [
+		NgbModule,
 		BrowserModule,
 		HttpClientModule,
 		MarkdownModule.forRoot(),
