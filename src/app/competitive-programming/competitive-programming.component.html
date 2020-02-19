@@ -1,8 +1,8 @@
 <p>{{ 'CP_TEXT' | translate }}</p>
 
 <div class="card-columns">
-	<div *ngFor="let contest of contests" class="card">
-		<div class="card-header bg-dark text-light">
+	<div *ngFor="let contest of contests" class="card border-primary">
+		<div class="card-header bg-primary">
 			{{ title(contest) | translate }}
 			<a *ngIf="contest.link"
 				[href]="contest.link"
@@ -28,7 +28,7 @@
 					<a *ngIf="attempt.link"
 						[href]="attempt.link"
 						target="_blank"
-						class="material-icons float-right text-secondary"
+						class="material-icons float-right text-dark"
 						title="{{ 'CONTEST_DETAILS' | translate }}"
 					>
 						open_in_new
@@ -36,5 +36,5 @@
 				</ng-container>
 			</li>
 		</ul>
-</div>
+	</div>
 </div>

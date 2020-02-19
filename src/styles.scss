@@ -1,8 +1,11 @@
-@import "~bootswatch/dist/materia/variables";
-@import "~bootstrap/scss/bootstrap.scss";
-@import "~bootswatch/dist/materia/bootswatch";
+$font-size-base: 1.1rem;
 
-p {
+@import "~bootswatch/dist/darkly/variables";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootswatch/dist/darkly/bootswatch";
+
+
+p, blockquote {
   text-align: justify;
 }
 
@@ -27,8 +30,4 @@ app-skills>app-skills-view>article {
   background-size: cover;
   background-position: center;
   background-image: url("/assets/images/background.jpeg");
-}
-
-.container {
-  background-color: white;
 }

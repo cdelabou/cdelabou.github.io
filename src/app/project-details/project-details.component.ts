@@ -11,8 +11,17 @@ export class ProjectDetailsComponent {
 
 	@Input()
 	set project(project: Project) {
-		// Scroll to element
-		document.getElementById('project-title').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+		// Md threshold
+		if (window.innerWidth < 768) {
+			// Scroll to element
+			const position = document.getElementById('project-title').getBoundingClientRect().top;
+			console.log(position)
+			window.scrollTo({
+				top: position - 110 + window.pageYOffset,
+				behavior: "smooth"
+			});
+		}
+
 		this._project = project;
 	}
 

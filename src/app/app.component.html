@@ -1,36 +1,95 @@
-<div class="row justify-content-between align-items-center">
-  <h1 class="col-auto">Clément de La Bourdonnaye</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom border-primary">
+  <a class="navbar-brand mr-auto" href="#">Clément de La Bourdonnaye</a>
 
-  <div class="col-auto">
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn en">
-        <input type="radio" name="lang" autocomplete="off" value="en-US" [(ngModel)]="lang">
-      </label>
-      <label class="btn fr">
-        <input type="radio" name="lang" autocomplete="off" value="fr-FR" [(ngModel)]="lang">
-      </label>
+  <ng-container *ngFor="let link of links">
+    <a href="{{ link.link }}" [ngClass]="link.class" class="btn mr-2 px-3 py-1">
+      <fa-icon [icon]='link.icon' class="fa-fw" title="{{ link.text }}"></fa-icon>
+    </a>
+  </ng-container>
+  <div class="btn-group btn-group-toggle ml-3" data-toggle="buttons">
+    <label class="btn en px-3 py-1">
+      &nbsp;
+      <input type="radio" name="lang" autocomplete="off" value="en-US" [(ngModel)]="lang">
+    </label>
+    <label class="btn fr px-3 py-1">
+      &nbsp;
+      <input type="radio" name="lang" autocomplete="off" value="fr-FR" [(ngModel)]="lang">
+    </label>
+  </div>
+</nav>
+
+<section class="bg-light">
+  <blockquote class="container blockquote" [innerHTML]="'WHO_AM_I_TEXT' | translate"></blockquote>
+</section>
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="pb-2">Formation</h2>
+  
+        <div class="row mb-3"  *ngFor="let school of schools">
+          <img class="col-4 pr-0" src="{{ school.icon }}" />
+          <div class="col-8">
+            <h5 class="my-0 pt-0">{{ school.name }}</h5>
+            <small>
+              {{ school.start }} - {{ school.stop }}
+              <fa-icon [icon]="faMapMarker" class="px-2"></fa-icon>
+              {{ school.location }}
+            </small>
+            <p class="pt-3">{{ school.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 bg-light">
+        <h2 class="pb-2">Expériences</h2>
+  
+        <div class="row mb-3"  *ngFor="let job of jobs">
+          <img class="col-4 pr-0" src="{{ job.icon }}" />
+          <div class="col-8">
+            <h5 class="my-0 pt-0">{{ job.company }}</h5>
+            <h6 class="my-0">{{ job.role }}</h6>
+            <small>{{ job.start }} - {{ job.stop }} <fa-icon [icon]="faMapMarker" class="px-2"></fa-icon>{{ job.location }}</small>
+            <p class="pt-3">{{ job.description }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<hr />
+</section>
 
-<h2>{{ 'WHO_AM_I_TITLE' | translate }}</h2>
-<p [innerHTML]="'WHO_AM_I_TEXT' | translate"></p>
+<section class="bg-light">
+  <div class="container">
+    <h2 id="SKILLS_TITLE">{{ 'SKILLS_TITLE' | translate }}</h2>
+    <app-skills></app-skills>
+  </div>
+</section>
 
-<h2>{{ 'SKILLS_TITLE' | translate }}</h2>
-<app-skills></app-skills>
+<section class="bg-light">
+  <div class="container">
+    <h2 id="PROJECTS_TITLE">{{ 'PROJECTS_TITLE' | translate }}</h2>
+    <app-projects></app-projects>
+  </div>
+</section>
 
-<h2>{{ 'PROJECTS_TITLE' | translate }}</h2>
-<app-projects></app-projects>
+<section class="bg-light">
+  <div class="container">
+    <h2 id="CP_TITLE">{{ 'CP_TITLE' | translate }}</h2>
+    <app-competitive-programming></app-competitive-programming>
+  </div>
+</section>
 
-<h2>{{ 'CP_TITLE' | translate }}</h2>
-<app-competitive-programming></app-competitive-programming>
+<section class="bg-light">
+  <div class="container">
+    <h2 id="CONTACT_TITLE" class="row">{{ 'CONTACT_TITLE' | translate }}</h2>
 
-<h2>{{ 'CONTACT_TITLE' | translate }}</h2>
-
-<div *ngFor="let link of links" class="row">
-  <a href="{{ link.link }}" class="col-lg-6 col-12" [ngClass]="link.class">
-    <fa-icon [icon]='link.icon' class="fa-3x fa-fw d-inline-block align-middle"></fa-icon>
-    <h3 class="text-dark align-middle d-inline">{{ link.text }}</h3>
-  </a>
-</div>
+    <div class="row mt-3">
+      <div *ngFor="let link of links" class="col-lg-6 col-12 p-1">
+        <a href="{{ link.link }}" class="btn text-left w-100" [ngClass]="link.class">
+          <fa-icon [icon]='link.icon' class="mr-1 fa-fw d-inline-block align-middle"></fa-icon>
+          {{ link.text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
