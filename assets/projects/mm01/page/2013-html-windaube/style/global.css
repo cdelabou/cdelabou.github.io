@@ -1,0 +1,47 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+/* Boutons */
+.red, .green, .orange{
+	border: solid 1px white;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 1em;
+	vertical-align: middle;
+	width: 1.4em;
+}
+
+.red{
+	background: radial-gradient(circle at 15% 15%, #F0A491, #BA1D00);
+}
+
+.green{
+	background: radial-gradient(circle at 15% 15%, #98CC98, #006C00);
+}
+
+.orange{
+	background: radial-gradient(circle at 15% 15%, #FAD698, #C6820C);
+}
+button{
+	display: inline-block;
+	text-align: center;
+	/*box-shadow: 0px 0px 1px 1px #009000 inset;*/
+	height: 2em;
+	line-height: 1.8em;
+	min-width: 6em;
+	border-radius: 4px;
+	background: linear-gradient(#FEFEFE 0%, #E4E2DB 75%, #D4D2CB 100%);
+	border: solid 1px #275A8E;
+	color: #3E3E3D;
+}
+button:focus{
+
+}

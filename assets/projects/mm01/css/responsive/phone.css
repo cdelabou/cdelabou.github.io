@@ -1,0 +1,10 @@
+body {
+	background-image: url(../../img/background/smartphone.jpg);
+	min-width: 300px;
+}
+
+
+header h1 {
+	font-size: 1.1em;
+}
+

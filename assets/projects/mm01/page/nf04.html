@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Smartfon Corp. Website</title>
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../img/logo_alpha.png" />
+
+	<!-- Styles généraux -->
+	<link rel="stylesheet" type="text/css" href="../css/elements.css" />
+	<link rel="stylesheet" type="text/css" href="../css/generic.css" />
+	<link rel="stylesheet" type="text/css" href="../css/classes.css" />
+
+	<!-- Styles particuliers pour chaque support -->
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)" href="../css/responsive/computer.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="../css/responsive/phone.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px) and (min-width: 480px)" href="../css/responsive/tablet.css" />
+
+
+	<!-- Styles intermédiaires communs -->
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="../css/responsive/phone_tablet.css" />
+
+	<!-- Styles particuliers de la page -->
+	<link rel="stylesheet" type="text/css" href="../css/pages/nf04.css" />
+</head>
+<body>
+	<!-- Menu de navigation -->
+	<header>
+		<img src="../img/logo_alpha.png" alt="" />
+		<h1>Smartfon Corp.</h1>
+
+		<img src="../img/ic_menu_white_24px.svg" class="no-computer" id="menuicon" alt="Menu" />
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.html">Smartfon</a>
+
+					<!-- Sous menus -->
+					<span>
+						<a href="../page/avis.html">Avis utilisateurs</a>
+						<a href="../page/quizz.html">Pourquoi acheter?</a>
+					</span>
+				</li>
+				<li>
+					<a href="../page/buy.html">Acheter</a>
+				</li>
+				<li>
+					<a href="../page/joinus.html">Nous rejoindre</a>
+
+					<!-- Sous menus -->
+					<span>
+						<a href="../page/products.html">Nos produits</a>
+					</span>
+				</li>
+				<li>
+					<a href="../page/contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Contenu -->
+	<div id="content">
+		<section>
+			<h1>Le langage NF04</h1>
+			<p>Initialement concu pour l'apprentissage, le langage NF04 a été adopté comme langage phare de notre téléphone. Trouvez sur cette page les ressources indispensables au développement d'une application</p>
+		</section>
+		<div class="row_box">
+			<!-- Editeur -->
+			<section class="col_box">
+				<button onclick="run()">Lancer le programme</button>
+				<!-- Code par défaut (les retours à la ligne sont encodés en html) -->
+				<div id="editor">Algorithme HelloWorld&#13;&#10;Variables&#13;&#10;    input: tableau[0..50] de caractère&#13;&#10;    indice: entier&#13;&#10;    lecture: caractère&#13;&#10;Instructions&#13;&#10;    Ecrire("Hello world !\n" !)&#13;&#10;    &#13;&#10;    Pour indice de 0 à 50&#13;&#10;        input[indice] <- '_'&#13;&#10;    FinPour&#13;&#10;    Ecrire("What is your name ?\n" !)&#13;&#10;    &#13;&#10;    Lire(clavier ! input[0])&#13;&#10;    indice <- 0&#13;&#10;    &#13;&#10;    Tant que input[indice] != '\0'&#13;&#10;        indice <- indice + 1&#13;&#10;        Lire(clavier ! input[indice])&#13;&#10;    Fintq&#13;&#10;    &#13;&#10;    Ecrire("Hello " !)&#13;&#10;    &#13;&#10;    indice <- 0&#13;&#10;    Tant que input[indice] != '\0'&#13;&#10;        Ecrire(input[indice] !)&#13;&#10;        indice <- indice + 1&#13;&#10;    Fintq&#13;&#10;&#13;&#10;    Ecrire("\n" !)</div>
+			</section>
+		
+			<!-- Affichage -->
+			<section id="phone" onclick="document.getElementById('input').focus()" >
+				<p id="output">
+					Welcome to Windaube XD !<br/>
+					Error loading UI (screen too small)<br/>
+					Using console as default output...<br/><br/>
+				</p>
+				<form action='#' method="get" onsubmit="return provide()">
+					<input type="text" id="input" />
+				</form>
+			</section>
+		</div>
+		<section>
+			<h2>Bases du langage</h2>
+		
+			<p class="red">Rappelez vous que si votre code ne fonctionne pas, c'est qu'il est mauvais, ne venez pas crier sur notre interpréteur.</p>
+		
+			<h4>Variables</h4>
+			<p>Les types par défaut disponibles sont <strong>entier</strong>, <strong>caractère</strong>, <strong>réel</strong> et <strong>booléen</strong>.</p>
+			<p>Les variables sont déclarées ainsi :</p>
+			<ul>
+				<li><strong>nom: type</strong> déclare une variable simple nommée <strong>nom</strong> et de type <strong>type</strong>.</li>
+				<li><strong>tabl: tableau[0..20] de entier</strong> crée un tableau nommé <strong>tabl</strong> et contenant 21 éléments (l'indice commence ici à 0) <strong>entiers</strong>.</li>
+			</ul>
+		
+			<h4>Instructions</h4>
+			<ul>
+				<li><strong>a <- b</strong> affectation de la valeur de b à a.</li>
+				<li><strong>Lire(clavier ! <em>variable</em>)</strong> lecture depuis le clavier dans la <em>variable</em>. Cette fonction détermine de façon magique le type de son paramètre de sortie vu que rien ne lui est indiqué.</li>
+				<li><strong>Ecrire(a, b, c !)</strong> affichage de a, b et c dans la console.</li>
+			</ul>
+		</section>
+		
+		<!-- Styles de la page -->
+		
+		
+		<!-- Editeur de contenu -->
+		<script src="../script/ace-editor/ace.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../script/nf04.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</div>
+
+	<div id="notifications">
+		<!-- Espace des notifications -->
+	</div>
+
+	<!-- Pied de page -->
+	<footer>
+		<a href="mailto:clement.de_la_bourdonnaye@utt.fr">Clément de La Bourdonnaye</a> - 2017 - Mangez 5 fruits et légumes par jour
+	</footer>
+
+	<!-- Script pour le menu -->
+	<script type="text/javascript" src="../script/menu.js"></script>
+	<script type="text/javascript" src="../script/notification.js"></script>
+
+	<!-- Scripts de la pages -->
+	<script type='text/javascript' src="../script/pages/nf04.js"></script>
+</body>
+</html>

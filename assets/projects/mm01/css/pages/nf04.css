@@ -1,0 +1,27 @@
+#phone {
+	flex: 0.6;
+	min-height: 400px;
+	max-height: 400px;
+	background-color: black;
+	border: solid #c79409 20px;
+	border-radius: 10px;
+	color: white;
+	font-family: Consolas;
+
+	overflow-y: auto;
+}
+
+#input {
+	font-family: Consolas;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+#editor {
+	min-height: 400px;
+	display: inline-block;
+}

@@ -1,0 +1,60 @@
+/* Toggle menu de navigation */
+#menuicon {
+	height: 2.7em;
+	float: right;
+	padding: 0.6em 1em;
+
+	cursor: pointer;
+}
+
+
+/* Menu de navigation */
+header nav {
+	display: none;
+}
+
+header nav.active {
+	display: block;
+}
+
+header li {
+	display: block;
+	padding: 0;
+
+	border-top: solid 1px rgba(255, 255, 255, 0.6);
+}
+
+header ul {
+	background-color: rgba(200, 200, 200, 0.05);
+}
+
+header li a {
+	display: block;
+	padding: 0.7em 1em;
+}
+
+header li span a {
+	padding-left: 2em;
+}
+
+header a:hover {
+	background-color: rgba(200, 200, 200, 0.05);
+}
+
+/* box */
+.col_box {
+	max-width: 100%;
+}
+
+.row_box {
+	flex-direction: column;
+}
+
+.row_box>* {
+	margin-left: 0;
+}
+
+/* On replace les images avant en mode téléphone/tablette */
+.image_container {
+	order: -1;
+}
