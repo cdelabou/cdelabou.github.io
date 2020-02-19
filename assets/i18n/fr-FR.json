@@ -1,7 +1,7 @@
 {
   "WHO_AM_I_TITLE": "Qui suis je?",
   "WHO_AM_I_TEXT": "Étudiant en 2ème année de cycle ingénieur à l'<b>Université de Technologie de Troyes</b> en Informatique et Système d'Information. Je suis passioné d'informatique et de programmation en général.",
-  "SKILLS_TITLE": "Mes compétences",
+  "SKILLS_TITLE": "Mes compétences et intérets",
   "PROJECTS_TITLE": "Mes projets",
   "CONTACT_TITLE": "Contact",
   "CONTACT_EMAIL_TEXT": "Vous pouvez me contacter par mail à l'adresse suivante",
@@ -10,7 +10,6 @@
   "PROJECTS_INTRO_TEXT": "Voici quelques projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.",
   "VIEW_SOURCE_CODE": "Accès au code source",
   "SKILLS_TEXT_1": "Autodidacte depuis l'âge de 14 ans, j'ai pu développer des compétences sur de nombreux domaines (développement, sécurité, formats de données...), mais également les renforcer par ma formation d'ingénieur en informatique.",
-  "SKILLS_TEXT_2": "J'ai une très bonne maitrise du <b>Typescript</b> (Node / Web) et du <b>Java</b> plus particulièrement, et suis capable de m'adapter à tout types de langage de programmation.",
   "PROJECT_PERSONAL_ROLE_TITLE": "Mon rôle dans le projet",
   "PROJECT_MADE_IN_TEXT": "Réalisé en",
   "LAST_UPDATED": "mis à jour le",
@@ -19,6 +18,19 @@
   "OUT_OF": "sur",
   "RESULTS": "Résultats",
   "CONTEST_DETAILS": "Détails sur le concours",
+  "studies": "Formations",
+  "experiences": "Expériences",
+  "skills": {
+    "titles": {
+      "interests": "Intérêts",
+      "environment": "Environnements",
+      "technos": "Technos"
+    },
+    "items": {
+      "code-analysis": "Je suis passionné par toutes les méthodes d'analyse ou de génération de code (compilateurs, générateurs de code, outils d'analyse de code...)",
+      "frameworks": "Concevoir un comportement générique dans un programme, pour qu'il puisse être utilisé simplement plus tard, est vraiment quelque chose qu'il m'est intéressant de faire"
+    }
+  },
   "contests": {
     "it-axa": "Meilleur étudiant en informatique de France",
     "java-gfi": "Java Challenge France by Gfi Informatique",
@@ -52,6 +64,35 @@
     "robotik": {
       "description": "Partie haut niveau du gros robot de l'association de robotique de l'UTT. Développée à l'aide de ROS ([Robot Operating System](http://www.ros.org/)), elle gère les différentes informations (capteurs, action réalisées et à réaliser) afin de diriger le robot.\n\nCe robot est construit dans l'objectif de participer à la [coupe de france de robotique 2019](https://www.coupederobotique.fr/).",
       "role": "Reprise du code de l'ancien robot et améliorations :\n- Restructuration du code (modularisation, suppression de code redondants...)\n- Mise en place d'un arbre d'action pour la décision\n- Adaptation aux nouveaux actionneurs et capteurs"
+    }
+  },
+  "exps": {
+    "utt": {
+      "name": "Université de technologie de Troyes",
+      "description": "Formation d'ingénieur de 5 ans, en Informatique et Systèmes d'Informations",
+      "location": "Troyes, France"
+    },
+    "utseus": {
+      "name": "Shanghai University",
+      "description": "Semestre d'études à l'étranger",
+      "location": "Shanghai, Chine"
+    },
+    "ntu": {
+      "name": "Nanyang Technological University",
+      "description": "Semestre d'études à l'étranger",
+      "location": "Singapour"
+    },
+    "bytel": {
+      "company": "Bouygues Telecom",
+			"role": "Développeur Java / Angular",
+			"location": "Nantes, France",
+      "description": "Développement d'outils de visualisation de micro-services"
+    },
+    "robotik": {
+      "company": "Association Robotik UTT",
+			"role": "Développeur ROS",
+			"location": "Troyes, France",
+			"description": "Développement de l'automatisme d'un robot autonome en C++ et python"
     }
   }
 }
