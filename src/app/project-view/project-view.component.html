@@ -1,5 +1,5 @@
 <article [ngStyle]="{'background-image': 'url(' + image() + ')' }">
-	<h3>{{project.name}}</h3>
+	<h3>{{'projects.' + project.id + '.title' | translate}}</h3>
 	<div>
 		<span *ngFor="let tech of project.technologies" class="tech">
 			{{tech}}

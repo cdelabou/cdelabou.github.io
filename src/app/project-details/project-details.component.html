@@ -2,7 +2,10 @@
   <h3>{{project.name}}</h3>
   <a [attr.href]="project.repo" class="btn btn-primary float-right">{{ 'VIEW_SOURCE_CODE' | translate }}</a>
 </div>
-<p>{{ 'PROJECT_MADE_IN_TEXT' | translate }} {{project.year}}</p>
+<p>
+  {{ 'projects.' + project.id + '.title' | translate }} -
+  {{ 'PROJECT_MADE_IN_TEXT' | translate }} {{project.year}}
+</p>
 
 <!--<p *ngIf="!project.commented">Le projet n'est pas documenté pour le moment.</p>-->
 <p *ngIf="project.demo">Une démo est disponible <a [attr.href]="'./assets/demos/' + project.demo">ici</a>.</p>
