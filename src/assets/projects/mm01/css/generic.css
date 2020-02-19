@@ -1,0 +1,160 @@
+/* Couleurs du site */
+:root {
+	--nav-bg: #152c04;
+	--nav-text: #FFFFFF;
+
+	--button: #009688;
+
+	--bg: #b8e387;
+
+	--content-text: #101010;
+	--content-bg: var(--nav-text);
+
+	--img: url(../img/empty.png);
+}
+
+/* ===================================================================
+	Général
+*/
+html {
+	height: 100%;
+	min-height: 500px;
+	width: 100%;
+	max-width: 100%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+
+
+	padding-bottom: 6em; /* place pour le footer */
+	box-sizing: border-box;
+	min-height: 100%;
+	position: relative; /* pour l'absolute du footer */
+
+	/* l'image de fond est définie par les styles spécifiques au format*/
+	background-color: var(--bg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+input[type=text], input[type=email], input[type=number], textarea {
+	padding: 5px;
+	margin: 3px;
+	width: 100%;
+
+	box-sizing: border-box;
+}
+
+textarea {
+	min-height: 300px;
+}
+
+
+p, #content ul {
+	text-align: justify;
+	padding-bottom: 0.3em;
+}
+
+header, footer {
+	background-color: var(--nav-bg);
+	color: var(--nav-text);
+}
+
+#content, footer {
+	box-sizing: border-box;
+}
+
+
+/* ===================================================================
+	Menu de navigation
+*/
+header {
+	min-height: 4em;
+}
+
+header img {
+	height: 4em;
+}
+
+header>* {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header h1 {
+	margin-right: 1em;
+	font-size: 2em;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+header li {
+	padding: 1em 0;
+}
+
+header li a {
+	text-decoration: none;
+
+	line-height: 1.7em;
+	font-size: 1.2em;
+	padding: 1em;
+}
+
+header li span a {
+	font-size: 1em;
+}
+
+
+/* ===================================================================
+	Contenu
+*/
+#content {
+	margin-top: 2em;
+}
+
+section, aside {
+	padding: 9px;
+
+	background-color: var(--content-bg);
+	color: var(--content-text);
+
+	margin-bottom: 12px;
+}
+
+section h2 {
+	padding: 0.3em 0;
+}
+
+section h3, section h4 {
+	padding: 5px 0;
+}
+
+/* ===================================================================
+	Contenu supplémentaire (aside)
+*/
+
+aside {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ===================================================================
+	Footer
+*/
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1em;
+}

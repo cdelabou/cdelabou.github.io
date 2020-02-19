@@ -1,0 +1,71 @@
+:root {
+	--width: 1000px;
+}
+
+body {
+	background-image: url(../../img/background/computer.jpg);
+}
+
+/* Bouton de navigation */
+.no-computer {
+	display: none;
+}
+
+/* Sous menus de navigation */
+header li:hover span a {
+	padding-right: 3em;
+}
+
+#content, footer {
+	width: var(--width);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+footer {
+	bottom: 15px;
+}
+
+/* Menu de navigation */
+header li {
+	display: inline-block;
+}
+
+/* Survol des éléments (sous menus et styles) */
+header li:hover {
+	background-color: rgba(200, 200, 200, 0.05);
+	border-bottom: solid 5px rgba(100, 255, 100, 0.8);
+	padding-bottom: calc(1em - 5px);
+}
+
+header li span {
+	display: none;
+}
+
+header li:hover span {
+	display: inline-block;
+	position: absolute;
+	top: 4em;
+
+	background-color: var(--nav-bg);
+
+	z-index: 2;
+}
+
+header li:hover span a {
+	background-color: rgba(255, 255, 255, 0.1);
+	display: block;
+	padding: 8px 20px;
+}
+
+header li:hover span a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.row_box>div>h2 {
+	margin-top: 0;
+	padding-top: 0;
+}

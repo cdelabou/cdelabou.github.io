@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Entête de la page -->
+<head>
+	<!-- Début de la partie concernant le référencement  -->
+	<title>Windaube XD - Hacker Edition</title>
+	<!-- Fin du référencement -->
+	
+	<meta charset="UTF-8">
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="style/global.css" type="text/css" />
+	<link rel="stylesheet" href="style/login.css" type="text/css" />
+	<link rel="stylesheet" href="style/jquery.css" type="text/css" />
+	<!-- Fin des styles -->
+
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/login.js"></script>
+</head>
+<!-- Fin de l'entête -->
+<body>
+	<header>
+		<div class="head_border"></div>
+	</header>
+
+	<section class="content">
+		<section id="section_left">
+			<div id="left_block">
+				<img src="img/logo.gif"><br/>
+				<strong>Windaube <sup>XD</sup></strong><br/>
+				<p>Pour commencer, cliquez sur votre<br/>nom d'utilisateur</p>
+			</div>
+		</section>
+
+		<div id="separator"></div>
+
+		<section id="section_right">
+			<article class="user">
+				<img src="img/html5.png">
+				<strong>Quelqu'un</strong><br/>
+				<form action="error.html">
+					<label>Entrez votre mot de passe :</label><br/>
+					<input type="password" />
+					<a href="error.html"><img class="green" src="img/go.gif" /></a>
+				</form>
+			</article>
+
+			<article class="user">
+				<img src="img/css3.png">
+				<strong>Invité</strong><br/>
+				<form action="desktop.html">
+					<label>Entrez votre mot de passe :</label><br/>
+					<input type="password" />
+					<a href="desktop.html"><img class="green" src="img/go.gif" /></a>
+				</form>
+			</article>
+		</section>
+	</section>
+	<!-- Déconnection (dans le même style que la page -->
+	<section id="turn_off">
+		<header>
+			<div class="head_border"></div>
+			<strong>Arrêter l'ordinateur</strong>
+		</header>
+		<section class="content">
+			<article>
+				<img  src="img/veille.gif" class="orange" /><br/>
+				<strong>Mettre en veille</strong>
+			</article>
+			<article>
+				<img  src="img/exit.gif" class="red" /><br/>
+				<strong>Arrêter</strong>
+			</article>
+			<article>
+				<img  src="img/restart.gif" class="green" /><br/>
+				<strong>Redémarrer</strong>
+			</article>
+		</section>
+		<footer>
+			<button id="hide">Annuler</button>
+		</footer>
+	</section>
+	<!-- Pied de page-->
+	<footer>
+		<div class="foot_border"></div><br/>
+		<img class="exiter red" src="img/exit.gif" />
+		<p class="exiter" style="cursor:pointer;">Éteindre l'ordinateur</p>
+		<p id="text_right"><!--Après avoir ouvert votre session, vous pouvez ajouter ou modifier des comptes. Allez dans le Panneau de configuration et cliquez sur Comptes d'utilisateurs.-->Après avoir ouvert votre session, vous pouvez faire planter Windaube. Lancez n'importe quel programme ou attendez.</p>
+	</footer>
+</body>
+</html>

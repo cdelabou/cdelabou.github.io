@@ -1,0 +1,220 @@
+body{
+	background-color: #5A7EDC;
+	color: white;
+	background: radial-gradient(closest-corner at 10% 25%, #91B1EE, #5A7EDC);
+}
+
+/* Disposition basique */
+header, footer{
+	background-color: #00309C;
+	height: 15%;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.head_border, .foot_border{
+	height: 2px;
+	width: 100%;
+	position: absolute;
+}
+
+.head_border{
+	bottom: 0;
+	background: linear-gradient(-90deg, #4A5ECC 0%, #AAC4F5 50%, #4A5ECC 100%);
+}
+.foot_border{
+	top: 0;
+	background: linear-gradient(-90deg, #4A5ECC 0%, #F59538 60%, #4A5ECC 100%);
+}
+
+/* Disposition au centre */
+.content{
+	position: absolute;
+	top: 16%;
+	bottom: 16%;
+	left: 2%;
+	right: 2%;
+}
+
+#separator{
+	width: 3px;
+	height: 100%;
+	display: inline-block;
+	background: radial-gradient(circle at 50% 50%, #7999E6, #5A7EDC);
+}
+
+#section_left, #section_right{
+	position: relative;
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+}
+/* Section de gauche */
+#section_left{
+	float: left;
+	text-align: right;
+	margin-right: 1%;
+	width: 48%;
+}
+
+#left_block{
+	position: absolute;
+	top: 50%;
+	margin-top: -7.3em;
+	right: 0;
+}
+
+#left_block>img{
+	height: 5em;
+}
+
+#left_block>strong{
+	line-height: 1.6em;
+	font-size: 1.5em;
+}
+#left_block>strong sup{
+	color:#F75121;
+}
+
+#left_block>p{
+	line-height: 1.3em;
+	font-size: 1.2em;
+}
+
+#left_block>strong, #left_block>img{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Section de droite */
+#section_right{
+	float: right;
+}
+.user{
+	border: solid 1px #5A7EDC;
+	margin-top: 1em;
+	padding: 0.5em;
+	position: relative;
+}
+
+.user>img{
+	height: 3em;
+	width: 3em;
+	border: solid 1px #FFEE00;
+	border-radius: 3px;
+	padding: 1px;
+	background-color: white;
+	vertical-align: top;
+}
+.user strong{
+	margin-left: 9px;
+}
+
+.user form{
+	position: absolute;
+	display: inline-block;
+	left: 4.3em;
+	top: 2.1em;
+}
+
+.user form label{
+	font-size: 0.8em;
+	margin-left: 6px;
+}
+
+.user form img, .user form input{
+	vertical-align: middle;
+	margin-top: 2px;
+	box-shadow: 1px 1px 0px 1px #2553B1;
+}
+
+.user form input{
+	font-size: 0.9em;
+	border: none;
+	background-color: #FEFEFE;
+	padding: 3px;
+	border-radius: 3px;
+	padding-left: 6px;
+}
+
+.select{
+	border: solid 1px #7999E6;
+	border-right: none;
+	border-radius: 5px 0 0 5px;
+	background: linear-gradient(-90deg, #5A7EDC 0%, #1242A6 100%);
+}
+
+/* Pied de la page */
+footer p{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#text_right{
+	float: right;
+	margin-right: 1em;
+	width: 45%;
+	font-size: 0.8em;
+}
+
+/* Fenetre de déconnection */
+#turn_off{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 32em;
+	height: 16em;
+	margin-top: -8em;
+	margin-left: -16em;
+	z-index: 2;
+	border: solid 1px black;
+	background-color: #5A7EDC;
+	background: radial-gradient(closest-corner at 50% 50%, #91B1EE, #5A7EDC);
+}
+
+#turn_off header, #turn_off footer{
+	height: 20%;
+}
+
+#turn_off header strong{
+	font-size: 1.3em;
+	padding: 2.5% 1em;
+	display: inline-block;
+}
+
+#turn_off .content{
+	position: absolute;
+	top: 50%;
+	margin-top: -3.6em;
+}
+
+#turn_off img{
+	margin: 1em;
+	height: 3em;
+	width: 3em;
+}
+
+#turn_off article{
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+
+#turn_off footer button{
+	float: right;
+	margin-right: 1em;
+	margin-top: 0.8em; 
+}

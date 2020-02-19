@@ -1,0 +1,57 @@
+/**
+ *	Styles graphiques des éléments de la page
+ */
+
+/* table */
+table {
+	margin: 7px 5px;
+	width: 100%;
+}
+
+table, td, th {
+	border: solid 1px #202020;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 5px 10px;
+}
+
+th {
+	text-align: left;
+}
+
+
+/* liens */
+a {
+	color: inherit;
+}
+
+/* listes */
+section ul {
+	margin-left: 1em;
+}
+
+/* boutons */
+button, input[type=submit], .button {
+	margin: 6px;
+	padding: 10px 30px;
+	border: none;
+	background-color: var(--button);
+	color: var(--nav-text);
+	font-size: 1em;
+
+	display: inline-block;
+
+	text-align: center;
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+input[type=radio] {
+	margin: 5px 10px;
+}
+/*.col_box>button, .col_box>input[type=submit], .col_box>.button {
+	flex: 0;
+}*/

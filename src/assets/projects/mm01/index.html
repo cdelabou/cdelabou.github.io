@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Smartfon Corp. Website</title>
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="./img/logo_alpha.png" />
+
+	<!-- Styles généraux -->
+	<link rel="stylesheet" type="text/css" href="./css/elements.css" />
+	<link rel="stylesheet" type="text/css" href="./css/generic.css" />
+	<link rel="stylesheet" type="text/css" href="./css/classes.css" />
+
+	<!-- Styles particuliers pour chaque support -->
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px)" href="./css/responsive/computer.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="./css/responsive/phone.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px) and (min-width: 480px)" href="./css/responsive/tablet.css" />
+
+
+	<!-- Styles intermédiaires communs -->
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="./css/responsive/phone_tablet.css" />
+
+	<!-- Styles particuliers de la page -->
+	<link rel="stylesheet" type="text/css" href="./css/pages/accueil.css" />
+</head>
+<body>
+	<!-- Menu de navigation -->
+	<header>
+		<img src="./img/logo_alpha.png" alt="" />
+		<h1>Smartfon Corp.</h1>
+
+		<img src="./img/ic_menu_white_24px.svg" class="no-computer" id="menuicon" alt="Menu" />
+		<nav>
+			<ul>
+				<li>
+					<a href="./index.html">Smartfon</a>
+
+					<!-- Sous menus -->
+					<span>
+						<a href="./page/avis.html">Avis utilisateurs</a>
+						<a href="./page/quizz.html">Pourquoi acheter?</a>
+					</span>
+				</li>
+				<li>
+					<a href="./page/buy.html">Acheter</a>
+				</li>
+				<li>
+					<a href="./page/joinus.html">Nous rejoindre</a>
+
+					<!-- Sous menus -->
+					<span>
+						<a href="./page/products.html">Nos produits</a>
+					</span>
+				</li>
+				<li>
+					<a href="./page/contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Contenu -->
+	<div id="content">
+		<section id="iframe_container">
+			<iframe src="https://www.youtube.com/embed/VYnMmcLrj0o" frameborder="0" gesture="media" allow="encrypted-media" controls="0" showinfo=0></iframe>
+		</section>
+		<div class="row_box">
+			<section class="col_box">
+				<span class="image_container" style="--img: url('../img/carte_bleue.jpg');">
+				</span>
+				<div>
+					<h2>Sécurité maximale</h2>
+					<p>Le déverrouillage par prélèvement bancaire permet de sécuriser votre téléphone et d'éviter que votre petit frère capture tous les Ratatas de la région sur Pokémon GO.</p>
+		
+					<h4>Comment cela fonctionne?</h4>
+		
+					<p>Insérez votre carte, entrez votre code de carte bleue, puis entrez le montant prélevé sur votre compte en guise de mot de passe. Pour plus de sécurité, nous prélevons un montant à 4 chiffres de 1 à 9.</p>
+				</div>
+			</section>
+			<div class="col_box">
+				<section class="row_box">
+					<span class="image_container" style="--img: url('../img/chargeur.jpg');"></span>
+					<div>
+						<h2>Plus de problèmes de chargeurs</h2>
+		
+						<p>Grâce au rechargement par photosynthèse, plus besoin de se soucier de la compatibilité avec des chargeurs ni de devoir rester immobile pour utiliser votre téléphone !</p>
+		
+						<p>Il vous faut juste un peu de soleil et des branches à brancher !</p>
+					</div>
+				</section>
+				
+				<section class="row_box">
+					<div>
+						<h2>Vos données partout, avec ou sans vous</h2>
+		
+						<p>Notre téléphone est équipé d'un système d'exploitation révolutionnaire : <a href="./page/windaube.html">Windaube XD</a>. La plupart de vos données sont synchronisées et sauvegardées sur nos serveurs. Ainsi, pas de risque de perdre les photos de votre dernier voyage au supermarché !</p>
+		
+						<small>Note : Windaube XD est optimisé pour un affichage ordinateur.</small>
+					</div>
+					<span class="image_container" style="--img: url(../img/data.jpg);"></span>
+				</section>
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="notifications">
+		<!-- Espace des notifications -->
+	</div>
+
+	<!-- Pied de page -->
+	<footer>
+		<a href="mailto:clement.de_la_bourdonnaye@utt.fr">Clément de La Bourdonnaye</a> - 2017 - Mangez 5 fruits et légumes par jour
+	</footer>
+
+	<!-- Script pour le menu -->
+	<script type="text/javascript" src="./script/menu.js"></script>
+	<script type="text/javascript" src="./script/notification.js"></script>
+
+	<!-- Scripts de la pages -->
+	
+</body>
+</html>
