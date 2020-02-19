@@ -10,7 +10,7 @@ export class SkillsComponent {
 	public faInfo = faInfoCircle;
 
 	categories = {
-		Technos: [
+		technos: [
 			{ name: 'Java', percent: 90 },
 			{ name: "Typescript / Javascript", percent: 100 },
 			{ name: 'Kotlin', percent: 80 },
@@ -22,7 +22,7 @@ export class SkillsComponent {
 			{ name: 'Angular JS', percent: 55 },
 			{ name: 'Spring Boot', percent: 60 }
 		],
-		Environment: [
+		environment: [
 			{ name: 'Git', percent: 90 },
 			{ name: 'VSCode', percent: 80 },
 			{ name: 'Idea InteliJ', percent: 75 },
@@ -32,11 +32,11 @@ export class SkillsComponent {
 			{ name: 'Maven', percent: 60 },
 			{ name: 'Eclipse', percent: 60 }
 		],
-		Interests: [
-			{ name: 'Code analysis / Compilation', percent: 95, description: "I am genuinely interested in every code related tools, such as compilators, code generators, code analysis..." },
+		interests: [
+			{ name: 'Code analysis / Compilation', percent: 95, description: "code-analysis" },
 			{ name: 'Artificial intelligence', percent: 70 },
 			{ name: 'Web development', percent: 65 },
-			{ name: 'Libraries / Frameworks', percent: 90, description: 'Building a generic behavior, so it can be used in a really simple way on many projects later, is really interesting for me !' },
+			{ name: 'Libraries / Frameworks', percent: 90, description: 'frameworks' },
 			{ name: 'Robotics', percent: 70 },
 			{ name: 'Data analysis', percent: 60 }
 		]

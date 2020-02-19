@@ -1,32 +1,32 @@
 <div class="row">
 	<div class="col-lg-6">
-	  <h2 class="pb-2">Formation</h2>
+	  <h2 class="pb-2">{{ 'studies' | translate }}</h2>
 
 	  <div class="row mb-3"  *ngFor="let school of schools">
 		<img class="col-4 pr-0" src="{{ school.icon }}" />
 		<div class="col-8">
-		  <h5 class="my-0 pt-0">{{ school.name }}</h5>
+		  <h5 class="my-0 pt-0">{{ 'exps.' + school.id + '.name' | translate }}</h5>
 		  <small>
 			{{ school.start }} - {{ school.stop }}
-			<app-location [name]="school.location"></app-location>
+			<app-location [name]="'exps.' + school.id + '.location' | translate"></app-location>
 		  </small>
-		  <p class="pt-3">{{ school.description }}</p>
+		  <p class="pt-3">{{ 'exps.' + school.id + '.description' | translate }}</p>
 		</div>
 	  </div>
 	</div>
 	<div class="col-lg-6 bg-light">
-	  <h2 class="pb-2">Expériences</h2>
+	  <h2 class="pb-2">{{ 'experiences' | translate }}</h2>
 
 	  <div class="row mb-3"  *ngFor="let job of jobs">
-		<img class="col-4 pr-0" src="{{ job.icon }}" />
+		<img class="col-4 pr-0 img-fluid" src="{{ job.icon }}" />
 		<div class="col-8">
-		  <h5 class="my-0 pt-0">{{ job.company }}</h5>
-		  <h6 class="my-0">{{ job.role }}</h6>
+		  <h5 class="my-0 pt-0">{{ 'exps.' + job.id + '.company' | translate }}</h5>
+		  <h6 class="my-0">{{ 'exps.' + job.id + '.role' | translate }}</h6>
 		  <small>
 			{{ job.start }} - {{ job.stop }}
-			<app-location [name]="job.location"></app-location>
+			<app-location [name]="'exps.' + job.id + '.location' | translate"></app-location>
 		  </small>
-		  <p class="pt-3 mb-0">{{ job.description }}</p>
+		  <p class="pt-3 mb-0">{{ 'exps.' + job.id + '.description' | translate }}</p>
 		  <span class="badge badge-primary mr-1" *ngFor="let tag of job.tags">
 			  {{ tag }}
 		  </span>

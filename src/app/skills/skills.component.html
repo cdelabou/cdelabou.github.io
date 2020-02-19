@@ -2,14 +2,14 @@
 
 <div class="row">
   <article *ngFor="let category of categories | keyvalue" class="col-md-4 mt-4 mt-md-0">
-    <h3>{{ category.key }}</h3>
+    <h3>{{ 'skills.titles.' + category.key | translate }}</h3>
     <div *ngFor="let language of category.value" class="mb-1">
       {{ language.name }}
       <fa-icon
         [icon]="faInfo"
         *ngIf="language.description"
         placement="bottom"
-        [ngbTooltip]="language.description"
+        [ngbTooltip]="'skills.items.' + language.description | translate"
       ></fa-icon>
       <div class="progress">
         <div 

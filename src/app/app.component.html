@@ -19,7 +19,10 @@
 </nav>
 
 <section class="bg-light">
-  <blockquote class="container blockquote" [innerHTML]="'WHO_AM_I_TEXT' | translate"></blockquote>
+  <blockquote class="container blockquote">
+    <fa-icon class="app-bg-quote" [icon]="faQuoteLeft"></fa-icon>
+    <span [innerHTML]="'WHO_AM_I_TEXT' | translate"></span>
+  </blockquote>
 </section>
 
 <section class="bg-light">

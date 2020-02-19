@@ -7,6 +7,23 @@ section {
   padding: 3em 0;
 }
 
+.container.blockquote {
+  position: relative;
+}
+.container.blockquote span {
+  position: relative;
+  z-index: 200;
+}
+.app-bg-quote {
+  position: absolute;
+  left: 0px;
+  top: -40px;
+  font-size: 3em;
+  color: rgba($color: #777, $alpha: 0.6);
+  z-index: 0;
+}
+
+
 .btn-group-toggle {
 
   * {

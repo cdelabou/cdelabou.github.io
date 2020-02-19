@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { faEnvelope, IconDefinition, faFileAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, IconDefinition, faQuoteLeft, faFileAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { forkJoin } from 'rxjs';
 
@@ -17,6 +17,8 @@ const dateFormatOptions = {
 })
 export class AppComponent {
 	resumeUpdateDate = new Date(2020, 0, 28);
+
+	faQuoteLeft = faQuoteLeft;
 
 	resume = { icon: faFileAlt, link: '/assets/cv-28-01-2020-en.pdf', text: '', class: 'btn-success' };
 	

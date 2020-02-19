@@ -9,47 +9,52 @@ export class ExperiencesComponent {
 
   schools = [
 		{ 
+      id: 'utt',
 			name: 'Université de technologie de Troyes', 
 			start: '2016', 
 			stop: '2021', 
 			location: 'Troyes, France',
 			description: 'Formation d\'ingénieur de 5 ans, en Informatique et Systèmes d\'Informations',
-			icon: 'https://io.binus.ac.id/files/2019/03/University-Troyes-640x372.jpg'
+			icon: '/assets/images/utt.jpg'
 		},
 		{ 
+      id: 'ntu',
 			name: 'Nanyang Technological University', 
-			start: 'Janvier', 
-			stop: 'Mai 2020', 
+			start: '01/2020', 
+			stop: '05/2020', 
 			location: 'Singapour',
 			description: 'Semestre d\'étude à l\'étranger',
-			icon: 'https://goodyfeed.com/wp-content/uploads/2019/06/ntu-696x364.jpg'
+			icon: '/assets/images/ntu.jpg'
 		},
 		{ 
+      id: 'utseus',
 			name: 'Shanghai University', 
-			start: 'Mars', 
-			stop: 'Juin 2018', 
+			start: '03/2018', 
+			stop: '07/2018', 
 			location: 'Shanghai, Chine',
 			description: 'Semestre d\'étude à l\'étranger',
-			icon: 'http://www.utseus.shu.edu.cn/en/images/T1-3.jpg'
+			icon: '/assets/images/shu.jpg'
 		}
 	]
 
 	jobs = [
 		{
+      id: "bytel",
 			company: 'Bouygues Telecom',
 			role: 'Développeur Java / Angular',
-			start: 'Juillet 2019',
-			stop: 'Janvier 2020',
+			start: '07/2019',
+			stop: '01/2020',
 			location: 'Nantes, France',
-			icon: 'http://workplacemagazine.fr/img/ArsegInfo/articles/photos/AR022000802_1Z.jpg',
+			icon: '/assets/images/bytel.jpg',
       description: 'Développement d\'outils de visualisation de micro-services',
-      tags: ['java', 'spring boot', 'angular', 'unit testing', 'visualization']
+      tags: ['java', 'spring boot', 'angular', 'unit testing', 'visualization', 'REST', 'RabbitMQ']
 		},
 		{
+      id: "robotik",
 			company: 'Association Robotik UTT',
 			role: 'Développeur ROS',
-			start: 'Septembre 2018',
-			stop: 'Aout 2019',
+			start: '09/2018',
+			stop: '07/2019',
 			location: 'Troyes, France',
 			icon: '/assets/images/project/robotik.jpg',
 			description: 'Développement de l\'automatisme d\'un robot autonome en C++ et python',
