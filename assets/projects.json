@@ -23,7 +23,6 @@
 	{
 		"id": "perlin",
 		"name": "Perlin's drive simulator",
-		"description": "Projet de terminale pour la spécialité ISN.\nJeu de voiture réalisé en java.",
 		"academic": true,
 		"commented": true,
 		"languages": ["java"],
@@ -32,23 +31,21 @@
 		"repo": "https://github.com/banilaste/perlins-drive-simulator"
 	},
 	{
-		"id": "awekato",
-		"name": "Awekato Web OS",
-		"description": "Web OS (simulation de système d'exploitation sur le web) réalisé à titre personnel. La structure des fichiers reprends à peu près celle d'un système linux.",
-		"year": 2013,
-		"repo": "https://github.com/banilaste/awekato",
-		"languages": ["javascript", "html", "css", "php"],
-		"technologies": ["jquery"],
-		"image": "awekato"
+		"id": "duck",
+		"name": "D.U.C.K.",
+		"year": 2020,
+		"academic": true,
+		"repo": "https://gitlab.com/banilaste/duck",
+		"languages": ["javascript", "kotlin"],
+		"technologies": ["udp", "code generation", "reflection"],
+		"image": "duck"
 	},
 	{
 		"id": "quarotte",
 		"name": "Quarotte",
 		"repo": "https://sourceforge.net/projects/quarotte-gl02/",
-		"description": "Projet de groupe réalisé dans le cadre d'une <abbr title=\"unité d'enseignement, matière suivie durant un semestre\">UE</abbr> de gestion de projet. Outil en ligne de commande de traitement de données issues de mails.",
 		"year": 2018,
 		"commented": true,
-		"role": "Création d'un module pour parser des mails et récupérer les données nécessaires à l'outil.",
 		"languages": ["typescript", "javascript"],
 		"technologies": ["unit testing", "parsing"],
 		"academic": true,
@@ -61,7 +58,8 @@
 		"description": "Projet d'interpréteur de langage de programmation utilisé dans le cadre d'un cours d'algorithmique.",
 		"year": 2018,
 		"languages": ["java"],
-		"technologies": ["parsing", "abstract syntax tree"]
+		"technologies": ["parsing", "abstract syntax tree"],
+		"image": "nf4"
 	},
 	{
 		"id": "8americain",

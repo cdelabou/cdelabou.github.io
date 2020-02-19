@@ -40,30 +40,38 @@
   },
   "projects": {
     "portfolio": {
+      "title": "Ce portfolio",
       "description": "Site vitrine présentant mes différents projets et mes compétences."
     },
     "perceval": {
+      "title": "Contrôle de robot",
       "description": "Application réalisée dans le cadre d'une UE de conception de robot. Elle permet de controler le robot à distance via bluetooth.\n\nDeux modes de fonctionnement sont disponibles :\n- Mode manuel : permet de donner manuellement les ordres au robot, ces derniers sont enregistrés au fur et à mesure pour le second mode\n- Mode playback : reprends un enregistrement d'ordre pour le reproduire à l'identique.\n\nLe bluetooth a été utilisé pour palier au manque de matériel et donc de moyens d'enregistrement des données sur le robot. L'enregistrement est une solution choisie pour pallier à l'irrégularité du sol et l'impossibilité de faire un asservissement avec le matériel donné."
     },
     "perlin": {
+      "title": "Jeu avec système de collision 2D",
       "description": "Projet de terminale pour la spécialité ISN.\nJeu de voiture réalisé en java."
     },
-    "awekato": {
-      "description": "Web OS (simulation de système d'exploitation sur le web) réalisé à titre personnel. La structure des fichiers reprends à peu près celle d'un système linux."
-    },
     "quarotte": {
+      "title": "Outil en ligne de commande",
       "description": "Projet de groupe réalisé dans le cadre d'une <abbr title=\"unité d'enseignement, matière suivie durant un semestre\">UE</abbr> de gestion de projet. Outil en ligne de commande de traitement de données issues de mails.",
       "role": "Création d'un module pour parser des mails et récupérer les données nécessaires à l'outil."
     },
     "nfcompile": {
+      "title": "Interpréteur de langage",
       "description": "Projet d'interpréteur de langage de programmation utilisé dans le cadre d'un cours d'algorithmique."
     },
     "8americain": {
+      "title": "Jeu de carte paramétrable",
       "description": "8 américain en java avec de nombreuses variantes. Ces dernières sont implémentées et peuvent être ajoutées en modifiant des fichiers de définition de variantes."
     },
     "robotik": {
+      "title": "Automatisme de robot par arbre d'action",
       "description": "Partie haut niveau du gros robot de l'association de robotique de l'UTT. Développée à l'aide de ROS ([Robot Operating System](http://www.ros.org/)), elle gère les différentes informations (capteurs, action réalisées et à réaliser) afin de diriger le robot.\n\nCe robot est construit dans l'objectif de participer à la [coupe de france de robotique 2019](https://www.coupederobotique.fr/).",
       "role": "Reprise du code de l'ancien robot et améliorations :\n- Restructuration du code (modularisation, suppression de code redondants...)\n- Mise en place d'un arbre d'action pour la décision\n- Adaptation aux nouveaux actionneurs et capteurs"
+    },
+    "duck": {
+      "title": "Framework de Remote call procedure",
+      "description": "Framework permettant de définir des objets distants (hébergés par un autre ordinateur ou programme) dont les attributs et méthodes peuvent appelés à travers le réseau.\n\nLes types d'objets sont décris dans un fichier, qui est ensuite parsé par un script javascript qui génère ensuite le code de chacun des objets définis en kotlin.\n\nLe framework a été pensé de façon à ce que du point de vue de l'utilisateur (le développeur), il n'y ai pas besoin de distinguer les objets distants et locaux, le même code est écrit dans les deux cas et les appels distants sont gérés automatiquement par la librairie."
     }
   },
   "exps": {
