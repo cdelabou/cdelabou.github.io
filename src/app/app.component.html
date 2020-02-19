@@ -34,8 +34,7 @@
             <h5 class="my-0 pt-0">{{ school.name }}</h5>
             <small>
               {{ school.start }} - {{ school.stop }}
-              <fa-icon [icon]="faMapMarker" class="px-2"></fa-icon>
-              {{ school.location }}
+              <app-location [name]="school.location"></app-location>
             </small>
             <p class="pt-3">{{ school.description }}</p>
           </div>
@@ -49,7 +48,10 @@
           <div class="col-8">
             <h5 class="my-0 pt-0">{{ job.company }}</h5>
             <h6 class="my-0">{{ job.role }}</h6>
-            <small>{{ job.start }} - {{ job.stop }} <fa-icon [icon]="faMapMarker" class="px-2"></fa-icon>{{ job.location }}</small>
+            <small>
+              {{ job.start }} - {{ job.stop }}
+              <app-location [name]="job.location"></app-location>
+            </small>
             <p class="pt-3">{{ job.description }}</p>
           </div>
         </div>

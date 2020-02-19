@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { CompetitiveProgrammingComponent } from './competitive-programming/competitive-programming.component';
+import { LocationComponent } from './location/location.component';
 
 
 registerLocaleData(localeFr);
@@ -32,7 +33,8 @@ export function createTranslateLoader(http: HttpClient) {
 		ProjectDetailsComponent,
 		SkillsComponent,
 		LocalizedDatePipe,
-		CompetitiveProgrammingComponent
+		CompetitiveProgrammingComponent,
+		LocationComponent
 	],
 	imports: [
 		BrowserModule,
