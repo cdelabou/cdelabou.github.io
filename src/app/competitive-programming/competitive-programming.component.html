@@ -2,19 +2,19 @@
 
 <div class="card-columns">
 	<div *ngFor="let contest of contests" class="card border-primary">
-		<div class="card-header bg-primary">
-			{{ title(contest) | translate }}
-			<a *ngIf="contest.link"
-				[href]="contest.link"
-				target="_blank"
-				class="material-icons float-right text-dark"
-				title="{{ 'CONTEST_DETAILS' | translate }}"
-			>
-				open_in_new
-			</a>
-		</div>
-		<ul *ngFor="let attempt of contest.attempts" class="list-group list-group-flush">
-			<li class="list-group-item">
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item card-header bg-primary">
+				{{ title(contest) | translate }}
+				<a *ngIf="contest.link"
+					[href]="contest.link"
+					target="_blank"
+					class="material-icons float-right text-light"
+					title="{{ 'CONTEST_DETAILS' | translate }}"
+				>
+					open_in_new
+				</a>
+			</li>
+			<li class="list-group-item" *ngFor="let attempt of contest.attempts">
 				<b>{{ attempt.year }} : </b>{{ attempt.place }}{{ ordinalSuffixOf(attempt.place) }} <ng-container *ngIf="attempt.outof">{{ 'OUT_OF' | translate }} {{ attempt.outof }}</ng-container>
 				<ng-container >
 					<a *ngIf="attempt.resultLink"
@@ -28,7 +28,7 @@
 					<a *ngIf="attempt.link"
 						[href]="attempt.link"
 						target="_blank"
-						class="material-icons float-right text-dark"
+						class="material-icons float-right text-light"
 						title="{{ 'CONTEST_DETAILS' | translate }}"
 					>
 						open_in_new

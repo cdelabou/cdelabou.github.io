@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom border-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-primary">
   <a class="navbar-brand mr-auto" href="#">Clément de La Bourdonnaye</a>
 
   <ng-container *ngFor="let link of links">
@@ -18,41 +18,41 @@
   </div>
 </nav>
 
-<section class="bg-light">
+<section class="bg-dark">
   <blockquote class="container blockquote">
     <fa-icon class="app-bg-quote" [icon]="faQuoteLeft"></fa-icon>
     <span [innerHTML]="'WHO_AM_I_TEXT' | translate"></span>
   </blockquote>
 </section>
 
-<section class="bg-light">
+<section class="bg-dark">
   <div class="container">
     <app-experiences></app-experiences>
   </div>
 </section>
 
-<section class="bg-light">
+<section class="bg-dark">
   <div class="container">
     <h2 id="SKILLS_TITLE">{{ 'SKILLS_TITLE' | translate }}</h2>
     <app-skills></app-skills>
   </div>
 </section>
 
-<section class="bg-light">
+<section class="bg-dark">
   <div class="container">
     <h2 id="PROJECTS_TITLE">{{ 'PROJECTS_TITLE' | translate }}</h2>
     <app-projects></app-projects>
   </div>
 </section>
 
-<section class="bg-light">
+<section class="bg-dark">
   <div class="container">
     <h2 id="CP_TITLE">{{ 'CP_TITLE' | translate }}</h2>
     <app-competitive-programming></app-competitive-programming>
   </div>
 </section>
 
-<section class="bg-light">
+<section class="bg-dark">
   <div class="container">
     <h2 id="CONTACT_TITLE" class="row">{{ 'CONTACT_TITLE' | translate }}</h2>
 
