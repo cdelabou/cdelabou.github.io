@@ -15,7 +15,6 @@ export class ProjectDetailsComponent {
 		if (window.innerWidth < 768) {
 			// Scroll to element
 			const position = document.getElementById('project-title').getBoundingClientRect().top;
-			console.log(position)
 			window.scrollTo({
 				top: position - 110 + window.pageYOffset,
 				behavior: "smooth"

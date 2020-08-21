@@ -1,6 +1,6 @@
 {
   "WHO_AM_I_TITLE": "Who am I?",
-  "WHO_AM_I_TEXT": "Fourth year student in five year engineering degree at the <b>University of Technology of Troyes</b> in Informatics and Information Systems, I love computer science and programming.",
+  "WHO_AM_I_TEXT": "Fifth year student in a five year engineering degree at the <b>University of Technology of Troyes</b> in Informatics and Information Systems, I love computer science and programming.",
   "SKILLS_TITLE": "My skills and interests",
   "PROJECTS_TITLE": "My projects",
   "CONTACT_TITLE": "Contact",
@@ -9,6 +9,7 @@
   "CONTACT_RESUME_ALONE": "My resume",
   "PROJECTS_INTRO_TEXT": "Here are some projects I've worked on as side projects or as courses' projects. Click on a project icon to see some details or access the source code !",
   "VIEW_SOURCE_CODE": "View source code",
+  "VIEW_PROJECT": "Project details",
   "SKILLS_TEXT_1": "Self-taught in software development since I was 14, I have been able to develop skills in many fields (software development, security, data structures...) that are strengthened by my engineering degree in computer science.",
   "PROJECT_PERSONAL_ROLE_TITLE": "My role in the project",
   "PROJECT_MADE_IN_TEXT": "Made in",
@@ -32,6 +33,7 @@
     }
   },
   "contests": {
+    "first-ascent": "First Ascent International",
     "it-axa": "Best french IT student by Axa",
     "java-gfi": "Java Challenge France by Gfi Informatique",
     "battledev": "Battle Dev",
@@ -89,6 +91,12 @@
       "name": "Nanyang Technological University",
       "description": "Study semester abroad",
       "location": "Singapore"
+    },
+    "jb": {
+      "company": "JetBrains",
+			"role": "MPS developer",
+			"location": "Remote",
+      "description": "Development of a domain specific language for physical simulations"
     },
     "bytel": {
       "company": "Bouygues Telecom",
