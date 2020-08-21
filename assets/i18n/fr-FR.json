@@ -1,6 +1,6 @@
 {
   "WHO_AM_I_TITLE": "Qui suis je?",
-  "WHO_AM_I_TEXT": "Étudiant en 2ème année de cycle ingénieur à l'<b>Université de Technologie de Troyes</b> en Informatique et Système d'Information. Je suis passioné d'informatique et de programmation en général.",
+  "WHO_AM_I_TEXT": "Étudiant ingénieur en dernière année à l'<b>Université de Technologie de Troyes</b> en Informatique et Système d'Information. Je suis passioné d'informatique et de programmation en général.",
   "SKILLS_TITLE": "Mes compétences et intérets",
   "PROJECTS_TITLE": "Mes projets",
   "CONTACT_TITLE": "Contact",
@@ -9,6 +9,7 @@
   "CONTACT_RESUME_ALONE": "Mon CV",
   "PROJECTS_INTRO_TEXT": "Voici quelques projets que j'ai pu réaliser personnellement ou dans le cadre de mes études.",
   "VIEW_SOURCE_CODE": "Accès au code source",
+  "VIEW_PROJECT": "Page du projet",
   "SKILLS_TEXT_1": "Autodidacte depuis l'âge de 14 ans, j'ai pu développer des compétences sur de nombreux domaines (développement, sécurité, formats de données...), mais également les renforcer par ma formation d'ingénieur en informatique.",
   "PROJECT_PERSONAL_ROLE_TITLE": "Mon rôle dans le projet",
   "PROJECT_MADE_IN_TEXT": "Réalisé en",
@@ -32,6 +33,7 @@
     }
   },
   "contests": {
+    "first-ascent": "First Ascent International",
     "it-axa": "Meilleur étudiant en informatique de France",
     "java-gfi": "Java Challenge France by Gfi Informatique",
     "battledev": "Battle Dev",
@@ -89,6 +91,12 @@
       "name": "Nanyang Technological University",
       "description": "Semestre d'études à l'étranger",
       "location": "Singapour"
+    },
+    "jb": {
+      "company": "JetBrains",
+			"role": "Développeur MPS",
+			"location": "Télétravail",
+      "description": "Développement d'un language de domaine pour simulations physiques"
     },
     "bytel": {
       "company": "Bouygues Telecom",
