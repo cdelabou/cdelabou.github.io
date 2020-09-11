@@ -16,11 +16,11 @@ const dateFormatOptions = {
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	resumeUpdateDate = new Date(2020, 0, 28);
+	resumeUpdateDate = new Date(2020, 8, 11);
 
 	faQuoteLeft = faQuoteLeft;
 
-	resume = { icon: faFileAlt, link: '/assets/cv-28-01-2020-en.pdf', text: '', class: 'btn-success' };
+	resume = { icon: faFileAlt, link: '/assets/CV_2020-09-11_Clement_de La Bourdonnaye.pdf', text: '', class: 'btn-success' };
 	
 	links: { icon: IconDefinition, link: string, text: string, class: string }[] = [
 		{ icon: faEnvelope, link: 'mailto:cle.bourdonnaye@gmail.com', text: 'cle.bourdonnaye@gmail.com', class: 'btn-danger' },
