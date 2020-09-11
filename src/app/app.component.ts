@@ -25,7 +25,7 @@ export class AppComponent {
 	links: { icon: IconDefinition, link: string, text: string, class: string }[] = [
 		{ icon: faEnvelope, link: 'mailto:cle.bourdonnaye@gmail.com', text: 'cle.bourdonnaye@gmail.com', class: 'btn-danger' },
 		{ icon: faLinkedin, link: 'https://www.linkedin.com/in/clement-bourdonnaye/', text: '@clement-bourdonnaye', class: 'btn-primary' },
-		{ icon: faGithub, link: 'https://github.com/banilaste', text: 'GitHub @banilaste', class: 'btn-warning' },
+		{ icon: faGithub, link: 'https://github.com/cdelabou', text: 'GitHub @cdelabou', class: 'btn-warning' },
 		this.resume
 	];
 

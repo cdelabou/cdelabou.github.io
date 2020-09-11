@@ -1,6 +1,6 @@
 # ProjectsPortfolio
 
-It is a personnal website with my projects, skills and contact description. The live version is available [here](https://banilaste.github.io/).
+It is a personnal website with my projects, skills and contact description. The live version is available [here](https://cdelabou.github.io/).
 
 ## Development server
 
