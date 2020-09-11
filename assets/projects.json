@@ -3,7 +3,7 @@
 		"id": "portfolio",
 		"name": "Portfolio",
 		"description": "Site vitrine présentant mes différents projets et mes compétences.",
-		"repo": "https://github.com/banilaste/banilaste.github.io",
+		"repo": "https://github.com/cdelabou/cdelabou.github.io",
 		"year": 2019,
 		"languages": ["typescript", "javascript", "html"],
 		"technologies": ["angular", "bootstrap"],
@@ -13,7 +13,7 @@
 		"id": "perceval",
 		"name": "Perceval controller",
 		"description": "Application réalisée dans le cadre d'une UE de conception de robot. Elle permet de controler le robot à distance via bluetooth.\n\nDeux modes de fonctionnement sont disponibles :\n- Mode manuel : permet de donner manuellement les ordres au robot, ces derniers sont enregistrés au fur et à mesure pour le second mode\n- Mode playback : reprends un enregistrement d'ordre pour le reproduire à l'identique.\n\nLe bluetooth a été utilisé pour palier au manque de matériel et donc de moyens d'enregistrement des données sur le robot. L'enregistrement est une solution choisie pour pallier à l'irrégularité du sol et l'impossibilité de faire un asservissement avec le matériel donné.",
-		"repo": "https://github.com/banilaste/perceval-controller",
+		"repo": "https://github.com/cdelabou/perceval-controller",
 		"year": 2017,
 		"image": "perceval",
 		"languages": ["java"],
@@ -28,7 +28,7 @@
 		"languages": ["java"],
 		"image": "perlin",
 		"year": 2016,
-		"repo": "https://github.com/banilaste/perlins-drive-simulator"
+		"repo": "https://github.com/cdelabou/perlins-drive-simulator"
 	},
 	{
 		"id": "duck",
