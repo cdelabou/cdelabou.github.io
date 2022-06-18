@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/io.github.cdelabou.content/io.github.cdelabou.content.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/io.github.cdelabou.content.impl/io.github.cdelabou.content.impl.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
